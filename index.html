@@ -1,226 +1,388 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8"/>
-        <title>Atnafu Lambebo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="css/font-awesome.min.css"/>
-        
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
-         <script src="js/respond.min.js"></script>
-         <![endif]-->
-        
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/menucollapse.js"></script>
-        <script type="text/javascript" src="js/arrow78.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-    </head>
-    
-    <body id="page-top" class="index">
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <span></span>
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Home<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
-                                <li><a href="#">Biography</a></li>
-                                <li><a href="#">CV (Web)</a></li>
-                                <li><a target="_blank" href="Curriculum_Vitae.pdf">CV (PDF)</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Publications<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
-                                <li><a href="#">All</a></li>
-                            </ul>
-                        </li>
-                                              
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                
-                <!-- search box submenu -->
-                <div class="collapse" id="bs-example-navbar-collapse-2">
-                    <gcse:search></gcse:search>
-                        </div>
-                
-            </div><!-- /.container-fluid -->
-        </nav>
-        
-        <section>
-            <!-- Place this tag where you want the search results to render -->
-            <gcse:searchresults-only></gcse:searchresults-only>
-                </section>
-        
-        <!-- Home Section -->
-        <section  name="home" id="home" style="margin-top:40px">
-            <div class="container">
-                <div align="left" class="col-md-3">
-                    <a target="_blank" href="images/atx.JPG">
-                        <img id="mobile-img" src="images/atx.JPG" width="200" border="0" height="250" alt=""></a>
-                </div>
-                <div align="left" class="col-md-4">
-                    <h2>Atnafu Lambebo Tonja
-                        <h4><i>PhD Student </i></h4>
-                        <h4><i><a href = "mailto: atnafuatx@gmail.com">Email-1</a></i></h4>
-                        <h4><i><a href = "mailto: atnafu.lambebo@wsu.edu.et">Email-2</i></h4>
-                        <h4><i><a target="/blank" href="https://www.linkedin.com/in/atnafu-lambebo-6b21a5184/" >LinkidIn</a></i></h4>
-                        <h4><i>Mexico City, Mexico</i></h4>
-                    </h2>
-                    </div>
-                                 
-                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
-                <b class="expandshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
-                </b>
-                <b class="collapseshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
-                </b>
-                
-            </div>
-        </section>
-        
-        <!-- Home Section -->
-        <section name="intro" id="intro">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <!--<h2>Welcome!</h2>-->
-                    
-                    <b class="noshow" style="display:none;" id="tab-1">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    
-                    <div class="allshow" style="display:none;" id="tab-intro-content">
-                        <hr class="star-primary">
-                        
-                        <p class="lead">
-                        My Name is <b>Atnafu Lambebo Tonja</b> I am PhD Student at <a target="/blank" href="www.cic.ipn.mx"> Centro de Investigación en Computación (CIC)</a>, <a target="/blank" href="www.ipn.mx"> Instituto Politécnico Nacional</a>, Mexico. I have M.Sc in Information Technology from <a target="/blank" href="www.wsu.edu.et">Wolaita Sodo University</a>, Ethiopia and I have B.Sc. in Computer Science from<a target="/blank" href="www.mwu.edu.et"> Madawalabu University</a>, Ethiopia.
-                        </p>
-                        <p>
-                       My primary research interest is <b>Natural Language Processing(NLP)</b>, particularly <i>NLP for low resourced languages; Machine Translation for low resourced languages;</i> and I am also intersted in Machine learning and Deep learning researches.
-                        </p>
-                        <p><span class="label label-success">Open for collaboration and Internship opportunities</span></p>
-                        <p><a href="#" class="btn-sm btn-primary">Biography &raquo;</a>
-                        <a href="#" class="btn-sm btn-primary">CV (Web)&raquo;</a>
-                        <a href="Curriculum_Vitae.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-       
-        <!-- Research Section -->
-        <section  name="publications" id="publications">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    <div class="allshow" style="display:none;" id="tab-publications-content">
-                        <hr class="star-primary">
-                        
-                        <h2>Selected Publications <a href="publications/" class="btn btn-primary">All Publications&raquo;</a></h2>
-                        <h4>
-                            <span class="label label-warning">
-                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 
-                            </span>&nbsp;
-                            <span class="label label-warning">
-                                <a target="_blank" href="https://scholar.google.com/citations?user=HCxwGIkAAAAJ&hl=en"><font color=white>Citations</font></a>: 
-                            </span>&nbsp;
-                            <span class="label label-warning">
-                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 
-                            </span>&nbsp;
-                            <span class="label label-default">
-                                <a target="_blank" href="https://orcid.org/0000-0002-3501-5136"><font color="white">ORCID</font></a>
-                            </span>&nbsp;
-                            <span class="label label-default">
-                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=57407037300"><font color="white">Scopus</font></a>
-                            </span>&nbsp;
-                                                      
-                            
-                        </h4>
-                        <ul>
-                            <li><span class="label label-success">ICT4DA 2022</span> <a target="_blank" href="https://arxiv.org/abs/2210.15224">"The Effect of Normalization for Bi-directional Amharic-English Neural Machine Translation"</a>,Tadesse Destaw Belay, <b>Atnafu Lambebo Tonja</b>, Olga Kolesnikova, Seid Muhie Yimam, Abinew Ali Ayele, Silesh Bogale Haile, Grigori Sidorov, Alexander Gelbukh, <b> arXiv, (2022)</b>. </li>
-                            </li>
-                            <li><span class="label label-success">MICAI 2022</span> <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-19496-2_3">"Improving neural machine translation for low resource languages using mixed training: The case of ethiopian
-                                languages"</a>,<b>Atnafu Lambebo Tonja</b>,Olga Kolesnikova, Muhammad Arif, Alexander Gelbukh, Grigori Sidorov, <b> Mexican International Conference on Artificial Intelligence(MCIAI 2022)</b>. </li>
-                            </li>
-                            <li><span class="label label-success">SMM4H 2022</span> <a target="_blank" href="https://aclanthology.org/2022.smm4h-1.17/">"CIC NLP at SMM4H 2022: a BERT-based approach for classification of social media forum posts"</a>,<b>Atnafu Lambebo Tonja</b>, Olumide Ebenezer Ojo, Mohammed Arif Khan, Abdul Gafar Manuel Meque, Olga Kolesnikova, Grigori Sidorov, Alexander Gelbukh, <b> Proceedings of The Seventh Workshop on Social Media Mining for Health Applications, Workshop & Shared Task. https://aclanthology.org/</b>. </li>
-                            </li>
-                            <li><span class="label label-success">CLEF 2022</span> <a target="_blank" href="http://ceur-ws.org/Vol-3180/paper-33.pdf">"CIC at CheckThat! 2022: Multi-class and Cross-lingual
-                                Fake News Detection"</a>,Arif, M.,<b>Atnafu Lambebo Tonja</b>,  Iqra Ameer, Olga Kolesnikova, Alexander Gelbukh, Grigori Sidorov and Abdul Gafar Manuel Meque, <b> Working Notes of CLEF, CEUR-WS. org</b>. </li>
-                            </li>
-                            <li><span class="label label-success">IberLEF 2022</span> <a target="_blank" href="http://ceur-ws.org/Vol-3202/davincis-paper2.pdf">"Detection of aggressive and violent incidents from social media in spanish using pretrained language model"</a>,<b>Atnafu Lambebo Tonja</b>, Arif, M., Kolesnikova, O., Gelbukh, A., & Sidorov, G., <b> Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2022), CEUR Workshop Proceedings. CEUR-WS. org</b>. </li>
-                            </li>
-                            <li><span class="label label-success">ICLR'2022</span> <a target="_blank" href="https://openreview.net/pdf?id=B0GEqcGV8-5">"The African Stopwords Project: Curating Stopwords for African Languages"</a>,Chris Chinenye Emezue, Hellina Hailu Nigatu, Cynthia Thinwa, Lerato Louis, Idris Abdulmumin, Samuel Gbenga Oyerinde, Benjamin Ayoade Ajibade, Helper Zhou, Emeka Felix Onwuegbuzia, Handel Chiagozie Emezue, Ifeoluwatayo Adeseye Ige, <b>Atnafu Lambebo Tonja</b>, Chiamaka Ijeoma Chukwuneke, Shamsuddeen Hassan Muhammad, Olanrewaju Samuel, <b>ICLR 2022 Workshop AfricaNLP, 2022</b>.</li>
-                            </li>
-                          <li><span class="label label-success">EAI ICAST'2021</span> <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-93709-6_32">"Early Ginger Disease Detection Using Deep Learning Approach"</a>, Mesay Gemeda Yigezu, Michael Melese Woldeyohannis,and <b>Atnafu Lambebo Tonja</b>, <b> Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering book series (LNICST)</b>. </li>
-                          <li><span class="label label-success">ICT4DA' 2021</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9671270">"Multilingual Neural Machine Translation for Low Resourced Languages: Ometo-Englishh"</a>, Mesay Gemeda Yigezu, Michael Melese Woldeyohannis,and <b>Atnafu Lambebo Tonja</b>, <b>2021 International Conference on Information and Communication Technology for Development for Africa (ICT4DA)</b>,.</li>
-                            <li><span class="label label-success">ICT4DA' 2021</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9672230">"A Parallel Corpora for bi-directional Neural Machine Translation for Low Resourced Ethiopian Languages"</a>,<b>Atnafu Lambebo Tonja</b> , Michael Melese Woldeyohannis,and Mesay Gemeda Yigezu, <b>2021 International Conference on Information and Communication Technology for Development for Africa (ICT4DA)</b>.
-                            </li>
-                        </ul>
-        <hr class="star-primary">
-        <footer>
-            <small>
-                <center>
-                    © 2022 | Atnafu Lambebo. Credits: AR template
-                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
-                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
-                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
-                            https://github.com/dmsl/academic-responsive-template
-                        </a> ]
-                    </div>
-                </center>
-            </small>
-        </footer>
-        
-    </body>
-    
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Atnafu Lambebo</title>
+  
+  <meta name="author" content="Jon Barron">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Atnafu Lambebo Tonja</name>
+              </p>
+              <p> I am PhD Student at <a href="https://www.cic.ipn.mx/"> Centro de Investigación en Computación (CIC)</a>,<a href="https://www.ipn.mx/">Instituto Politécnico Nacional </a> , Mexico.</p>
+              <p>
+                I have M.Sc in Information Technology from <a href="http://www.wsu.edu.et/"> Wolaita Sodo University</a>, Ethiopia and I have B.Sc. in Computer Science from <a href="http://www.mwu.edu.et/"> Madawalabu University</a>, Ethiopia.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:atanafuatx@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="data/Curriculum_Vitae_Atnafu_Lambebo.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/atnafu-lambebo-6b21a5184/">LinkedIn</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com.mx/citations?user=rubyApkAAAAJ&hl=es">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/AtnafuLambebo">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/atnafuatx">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/picture.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="myi/picture.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+              His research focuses on machine translation for low-resource languages, text processing, named-entity recognition, sentiment analysis, offensive language identification, author profiling, clinical NLP, and code-mixed texts. I'm currently working on training Pretrained Language Models (PLMs) for low-resource languages with small data sets, specifically for African languages; improving neural machine translation performance for low-resource languages; and machine translation in code mixed data sets.  </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr>
+            <td><heading>Publications</heading></td>
+          </tr>
+          <tr>
+            <td> <b> <i> 2022</i></b></td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/emnlp.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2211.03263">
+                <papertitle>AfroLM: A Self-Active Learning-based Multilingual Pretrained Language Model for 23 African Languages</papertitle>
+              </a>
+              <br>
+              Bonaventure FP Dossou, <strong>Atnafu Lambebo Tonja</strong>, Oreen Yousuf, Salomey Osei, Abigail Oppong, Iyanuoluwa Shode, Oluwabusayo Olufunke Awoyomi, Chris Chinenye Emezue
+							
+             
+            </td>
+          </tr>
+		  
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/ICT4D logo _33_150_0.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2210.15224">
+                <papertitle>The Effect of Normalization for Bi-directional Amharic-English Neural Machine Translation</papertitle>
+              </a>
+              <br>
+              Tadesse Destaw Belay, <strong>Atnafu Lambebo Tonja</strong> , Olga Kolesnikova, Seid Muhie Yimam, Abinew Ali Ayele, Silesh Bogale Haile, Grigori Sidorov, Alexander Gelbukh
+							
+              
+            </td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/MICAI.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-19496-2_3">
+                <papertitle>Improving Neural Machine Translation for Low Resource Languages Using Mixed Training: The Case of Ethiopian Languages</papertitle>
+              </a>
+              <br>
+              <strong>Atnafu Lambebo Tonja</strong>, Olga Kolesnikova, Muhammad Arif, Alexander Gelbukh, Grigori Sidorov
+							
+              
+            </td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/smm4h.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://aclanthology.org/2022.smm4h-1.17/">
+                <papertitle>CIC NLP at SMM4H 2022: a BERT-based approach for classification of social media forum posts</papertitle>
+              </a>
+              <br>
+              <strong>Atnafu Lambebo Tonja</strong>, Olumide Ebenezer Ojo, Mohammed Arif Khan, Abdul Gafar Manuel Meque, Olga Kolesnikova, Grigori Sidorov, Alexander Gelbukh
+              
+            </td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/ibref.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2210.15224">
+                <papertitle>Detection of aggressive and violent incidents from social media in spanish using pretrained language model</papertitle>
+              </a>
+              <br>
+              <strong>Atnafu Lambebo Tonja</strong>, Muhammad Arif, Olga Kolesnikova, Alexander Gelbukh, Grigori Sidorov
+              <br>
+             
+            </td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/logo_clef_2022_def.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ceur-ws.org/Vol-3180/paper-33.pdf">
+                <papertitle>CIC at CheckThat! 2022: multi-class and cross-lingual fake news detection</papertitle>
+              </a>
+              <br>
+              Muhammad Arif, <strong>Atnafu Lambebo Tonja</strong>, Iqra Ameer, Olga Kolesnikova, Alexander Gelbukh, Grigori Sidorov, Abdul Gafar Manuel Meque
+              <br>
+             
+            </td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/afrinlp.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=B0GEqcGV8-5">
+                <papertitle>The African Stopwords Project: Curating Stopwords for African Languages</papertitle>
+              </a>
+              <br>
+              Chris Chinenye Emezue, Hellina Hailu Nigatu, Cynthia Thinwa, Helper Zhou, Shamsuddeen Hassan Muhammad, Lerato Louis, Idris Abdulmumin, Samuel Gbenga Oyerinde, Benjamin Ayoade Ajibade, Olanrewaju Samuel, Emeka Felix Onwuegbuzia, Handel Chiagozie Emezue, Ifeoluwatayo Adeseye Ige, <strong>Atnafu Lambebo Tonja</strong>, Chiamaka Ijeoma Chukwuneke, Bonaventure F. P. Dossou, Naome A Etori, CHINEDU EMMANUEL MBONU, Oreen Yousuf, Kaosarat Boluwatife Aina, Davis David
+              <br>
+             
+            </td>
+          </tr>
+
+          <tr>
+            <td> <b> <i> 2021</i></b></td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/ICT4D logo _33_150_0.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9672230/">
+                <papertitle>A Parallel Corpora for bi-directional Neural Machine Translation for Low Resourced Ethiopian Languages</papertitle>
+              </a>
+              <br>
+              <strong>Atnafu Lambebo Tonja</strong>, Michael Melese Woldeyohannis, Mesay Gemeda Yigezu
+              <br>
+             
+            </td>
+          </tr>
+
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/ICT4D logo _33_150_0.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9671270">
+                <papertitle>Multilingual Neural Machine Translation for Low Resourced Languages: Ometo-English</papertitle>
+              </a>
+              <br>
+             Mesay Gemeda Yigezu , Michael Melese Woldeyohannis, <strong>Atnafu Lambebo Tonja</strong>
+              <br>
+             
+            </td>
+          </tr>
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='myi/icast.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9671270">
+                <papertitle>Early Ginger Disease Detection Using Deep Learning Approach</papertitle>
+              </a>
+              <br>
+             Mesay Gemeda Yigezu , Michael Melese Woldeyohannis, <strong>Atnafu Lambebo Tonja</strong>
+              <br>
+             
+            </td>
+          </tr>
+
+        </tbody></table>
+
+				
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Misc</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <a href="http://www.winlp.org/"><img src="myi/win.png"></a></td>
+            <td width="75%" valign="center">
+              Workshop chair
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <a href="https://www.latinxinai.org/neurips-2022"> <img src="myi/latinxinai.png" alt="cs188"></a>
+            </td>
+            <td width="75%" valign="center">
+              <strong>LatinX in AI Research at NeurIPS 2022 </strong>- Workshop Chair
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <a href="https://blackinai.github.io/#/"><img src="myi/blackinai.png" alt="cs188"></a> 
+            </td>
+            <td width="75%" valign="center">
+              <strong>Member</strong>
+            </td>
+          </tr>
+					
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <a href="https://www.masakhane.io/"><img  src="myi/mask.jpeg" alt="cs188"></a>
+            </td>
+            <td width="75%" valign="center">
+              <strong>Member</strong>
+            </td>
+          </tr>				
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+           <p>Design and source code from <a href="https://jonbarron.info/">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>
