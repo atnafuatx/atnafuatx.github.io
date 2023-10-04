@@ -1,10 +1,10 @@
-2023
+<!-- 2023
 ---
 title: "AfriNames: Most ASR models" butcher" African Names"
 collection: publications
 permalink: /publication/2023-01-afrinames
 <!-- excerpt: 'This paper is about the number 1. The number 2 is left for future work.' -->
-<!-- date: 2009-10-01 -->
+<!-- date: 2009-10-01
 venue: 'INTERSPEECH 2023'
 paperurl: 'https://arxiv.org/pdf/2306.00253.pdf'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'

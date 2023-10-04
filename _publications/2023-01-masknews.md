@@ -1,9 +1,9 @@
-2023
+<!-- 2023
 ---
 title: "MasakhaNEWS: News Topic Classification for African languages"
 collection: publications
 permalink: /publication/2023-01-masknews
-<!-- excerpt: 'This paper is about the number 1. The number 2 is left for future work.' -->
+<!-- excerpt: 'This paper is about the number 1. The number 2 is left for future work.' 
 date: 2023
 venue: 'AACL 2023'
 paperurl: 'https://arxiv.org/pdf/2304.09972.pdf'
