@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications [(Google Scholar)](https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en)"
+title: "Publications [(Google Scholar)](https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en"
 permalink: /publications/
 author_profile: true
 ---
