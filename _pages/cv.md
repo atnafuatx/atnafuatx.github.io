@@ -15,19 +15,7 @@ Education
 * M.S. in Information Technology, Wolaita Sodo University,Ethiopa, 2021
 * Ph.D in Computer Science, Instituto Politecnico Nacional, Mexico, 2022 - Present
 * Research Scholar: University of Colorado, Colorado Springs, USA 2023 - Present 
-<!-- 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-   -->
 Skills
 ======
 * Languages
