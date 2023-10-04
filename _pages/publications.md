@@ -12,7 +12,7 @@ General Domain ASR](https://arxiv.org/pdf/2310.00274)</b><br>
 Tobi Olatunji, Tejumade Afonja, Aditya Yadavalli, Chris Chinenye Emezue, Sahib Singh, Bonaventure F.P. Dossou, Joanne Osuchukwu, Salomey Osei, <b>Atnafu Lambebo Tonja</b>, Naome Etori, Clinton Mbataku. <i>In TACL 2023</i>
 
 <b>[MasakhaNEWS: News Topic Classification for African languages](https://arxiv.org/abs/2304.09972)</b> <br> 
-<b>David Ifeoluwa Adelani</b>, Marek Masiak, Israel Abebe Azime, Jesujoba O. Alabi, Atnafu Lambebo Tonja, Christine Mwase, Odunayo Ogundepo, Bonaventure F. P. Dossou, Akintunde Oladipo, ..., and Pontus Stenetorp . <i>In IJCNLP-AACL, 2023 & AfricaNLP Workshop 2023</i>.
+David Ifeoluwa Adelani, Marek Masiak, Israel Abebe Azime, Jesujoba O. Alabi, <b>Atnafu Lambebo Tonja</b>, Christine Mwase, Odunayo Ogundepo, Bonaventure F. P. Dossou, Akintunde Oladipo, ..., and Pontus Stenetorp . <i>In IJCNLP-AACL, 2023 & AfricaNLP Workshop 2023</i>.
 
 <b>[AfriNames: Most ASR models" butcher" African Names](https://arxiv.org/pdf/2306.00253)</b><br>
 Tobi Olatunji, Tejumade Afonja, Bonaventure FP Dossou, <b>Atnafu Lambebo Tonja</b>, Chris Chinenye Emezue, Amina Mardiyyah Rufai, Sahib Singh. <i>In INTERSPEECH 2023</i>
