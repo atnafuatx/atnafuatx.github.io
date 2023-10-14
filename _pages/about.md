@@ -17,10 +17,10 @@ Research interests
 
 News
 ======
-- 2 paper accepted at EMNLP 2023 : [Cross-lingual Open-Retrieval Question Answering for African Languages]() and [The Less the Merrier? Investigating Language Representation in Multilingual Models]() 
-- 1 paper accepted at TACL:[AfriSpeech-200: Pan-African accented speech dataset for clinical and general domain ASR](https://arxiv.org/pdf/2310.00274.pdf)
+- 2 paper accepted at EMNLP 2023 : [The Less the Merrier? Investigating Language Representation in Multilingual Models]()  and [Cross-lingual Open-Retrieval Question Answering for African Languages](https://arxiv.org/pdf/2305.06897) 
+- 1 paper accepted at TACL:[AfriSpeech-200: Pan-African accented speech dataset for clinical and general domain ASR](https://arxiv.org/pdf/2310.00274)
 - 1 paper accepted at AACL 2023:[MasakhaNEWS](https://arxiv.org/abs/2304.09972)
-- 1 paper accepted at INTERSPEECH 2023: [AfriNames: Most ASR models "butcher" African Names](https://arxiv.org/pdf/2306.00253.pdf)
+- 1 paper accepted at INTERSPEECH 2023: [AfriNames: Most ASR models "butcher" African Names](https://arxiv.org/pdf/2306.00253)
 
 <!-- 
 A data-driven personal website
