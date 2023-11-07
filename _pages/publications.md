@@ -6,13 +6,15 @@ author_profile: true
 
 2023
 ------
+<b>[The Less the Merrier? Investigating Language Representation in Multilingual Models] (https://arxiv.org/pdf/2310.13228.pdf) </b><br>
+Hellina Hailu Nigatu, <b>Atnafu Lambebo Tonja</b>, Jugal Kalita. <i>In EMNLP 2023 </i>
 
 <b>[AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and
 General Domain ASR](https://arxiv.org/pdf/2310.00274)</b><br>
 Tobi Olatunji, Tejumade Afonja, Aditya Yadavalli, Chris Chinenye Emezue, Sahib Singh, Bonaventure F.P. Dossou, Joanne Osuchukwu, Salomey Osei, <b>Atnafu Lambebo Tonja</b>, Naome Etori, Clinton Mbataku. <i>In TACL 2023</i>
 
 <b>[MasakhaNEWS: News Topic Classification for African languages](https://arxiv.org/abs/2304.09972)</b> <br> 
-David Ifeoluwa Adelani, Marek Masiak, Israel Abebe Azime, Jesujoba O. Alabi, <b>Atnafu Lambebo Tonja</b>, Christine Mwase, Odunayo Ogundepo, Bonaventure F. P. Dossou, Akintunde Oladipo, ..., and Pontus Stenetorp . <i>In IJCNLP-AACL, 2023 & AfricaNLP Workshop 2023</i>.
+David Ifeoluwa Adelani, Marek Masiak, Israel Abebe Azime, Jesujoba O. Alabi, <b>Atnafu Lambebo Tonja</b>, Christine Mwase, Odunayo Ogundepo, Bonaventure F. P. Dossou, Akintunde Oladipo, ..., and Pontus Stenetorp . <i>In IJCNLP-AACL [Best Paper Award ...Area Chair Award(Resources and Evaluation) ], 2023 & AfricaNLP Workshop 2023</i>.
 
 <b>[AfriNames: Most ASR models" butcher" African Names](https://arxiv.org/pdf/2306.00253)</b><br>
 Tobi Olatunji, Tejumade Afonja, Bonaventure FP Dossou, <b>Atnafu Lambebo Tonja</b>, Chris Chinenye Emezue, Amina Mardiyyah Rufai, Sahib Singh. <i>In INTERSPEECH 2023</i>
