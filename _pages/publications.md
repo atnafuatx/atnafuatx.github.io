@@ -37,3 +37,24 @@ Israel Abebe Azime, Sana Al-azzawi, <b>Atnafu Lambebo Tonja</b>, Iyanuoluwa Shod
 
 2022
 -----
+<b>[AfroLM: A Self-Active Learning-based Multilingual Pretrained Language Model for 23 African Languages](https://arxiv.org/pdf/2211.03263.pdf)</b><br>
+Bonaventure F. P. Dossou, <b>Atnafu Lambebo Tonja</b>, Oreen Yousuf, Salomey Osei, Abigail Oppong, Iyanuoluwa Shode, Oluwabusayo Olufunke Awoyomi, Chris Chinenye Emezue. <i> In SustaiNLP Wokshop, co-located with EMNLP 2022 </i>
+
+<b>[The Effect of Normalization for Bi-directional Amharic-English Neural Machine Translation](https://arxiv.org/pdf/2210.15224.pdf)</b><br>
+Tadesse Destaw Belay, <b>Atnafu Lambebo Tonja</b>, Olga Kolesnikova, Seid Muhie Yimam, Abinew Ali Ayele, Silesh Bogale Haile, Grigori Sidorov, Alexander Gelbukh. <i>In 2022 International Conference on Information and Communication Technology for Development for Africa (ICT4DA) </i>
+
+<b>[Improving neural machine translation for low resource languages using mixed training:The case of ethiopian languages](https://link.springer.com/chapter/10.1007/978-3-031-19496-2_3)</b> <br>
+<b>Atnafu Lambebo Tonja</b>, Olga Kolesnikova, Muhammad Arif, Alexander Gelbukh, Grigori Sidorov. <i> In Mexican International Conference on Artificial Intelligence </i>
+
+<b>[Early Ginger Disease Detection Using Deep Learning Approach](https://link.springer.com/chapter/10.1007/978-3-030-93709-6_32)</b><br>
+Mesay Gemeda Yigezu, Michael Melese Woldeyohannis,  <b>Atnafu Lambebo Tonja</b> <i> In International Conference on Advances of Science and Technology</b>
+
+2021
+-----
+
+<b>[A parallel corpora for bi-directional neural machine translation for low resourced ethiopian languages](https://ieeexplore.ieee.org/abstract/document/9672230)</b><br>
+<b>Atnafu Lambebo Tonja</b>, Michael Melese Woldeyohannis, Mesay Gemeda Yigezu. <i> In 2021 International Conference on Information and Communication Technology for Development for Africa (ICT4DA)</i>
+
+<b>[Multilingual neural machine translation for low resourced languages: Ometo-english](https://ieeexplore.ieee.org/abstract/document/9671270)</b><br>
+Mesay Gemeda Yigezu, Michael Melese Woldeyohannis, <b>Atnafu Lambebo Tonja</b>
+<i> In 2021 International Conference on Information and Communication Technology for Development for Africa (ICT4DA) </i>
