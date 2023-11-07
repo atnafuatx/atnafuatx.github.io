@@ -47,7 +47,7 @@ Tadesse Destaw Belay, <b>Atnafu Lambebo Tonja</b>, Olga Kolesnikova, Seid Muhie 
 <b>Atnafu Lambebo Tonja</b>, Olga Kolesnikova, Muhammad Arif, Alexander Gelbukh, Grigori Sidorov. <i> In Mexican International Conference on Artificial Intelligence </i>
 
 <b>[Early Ginger Disease Detection Using Deep Learning Approach](https://link.springer.com/chapter/10.1007/978-3-030-93709-6_32)</b><br>
-Mesay Gemeda Yigezu, Michael Melese Woldeyohannis, <b>Atnafu Lambebo Tonja</b>. <i> In International Conference on Advances of Science and Technology</b>
+Mesay Gemeda Yigezu, Michael Melese Woldeyohannis, <b>Atnafu Lambebo Tonja</b>. <i> In International Conference on Advances of Science and Technology</i>
 
 2021
 -----
