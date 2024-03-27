@@ -7,6 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 I am a research scholar at [University of Colorado, Colorado Springs](https://www.uccs.edu/), USA and PhD student at [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico.
 
 Research interests
@@ -17,8 +18,8 @@ Research interests
 
 News
 ======
-- 1 paper accepted at LREC-COLING 2024 : [EthioLLM: Multilingual Large Language Models for Ethiopian Languages with Task Evaluation] (https://arxiv.org/abs/2403.13737)
-- 1 paper accepted at NAACL 2024 : [NLP Progress in Indigenous Latin American Languages] ()
+- 1 paper accepted at LREC-COLING 2024 : [EthioLLM: Multilingual Large Language Models for Ethiopian Languages with Task Evaluation](https://arxiv.org/abs/2403.13737)
+- 1 paper accepted at NAACL 2024 :[NLP Progress in Indigenous Latin American Languages]()
 - 2 paper accepted at EMNLP 2023 : [The Less the Merrier? Investigating Language Representation in Multilingual Models]()  and [Cross-lingual Open-Retrieval Question Answering for African Languages](https://arxiv.org/pdf/2305.06897) 
 - 1 paper accepted at TACL:[AfriSpeech-200: Pan-African accented speech dataset for clinical and general domain ASR](https://arxiv.org/pdf/2310.00274)
 - 1 paper accepted at AACL 2023:[MasakhaNEWS](https://arxiv.org/abs/2304.09972)
