@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a research scholar at [University of Colorado, Colorado Springs](https://www.uccs.edu/), USA and PhD student at [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico.
+I am visiting student at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), UAE and PhD student at [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico.
 
 Research interests
 ======
