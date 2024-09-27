@@ -22,7 +22,7 @@ Aditya Nanda Kishore, Aishik Mandal, Alina Dragonetti, Artem Abzaliev,
 
 <b>[Gender Bias Evaluation in Machine Translation for Amharic, Tigrigna, and Afaan Oromoo](https://aclanthology.org/2024.gitt-1.pdf#page=12) </b><br>
 
-Walelign Tewabe Sewunetie, <b>Atnafu Lambebo Tonja </br>, Tadesse Destaw Belay,Hellina Hailu Nigatu, Gashaw Kidanu, Zewdie Mossie, Hussien Seid, Seid Muhie Yimam
+Walelign Tewabe Sewunetie, <b>Atnafu Lambebo Tonja </b>, Tadesse Destaw Belay,Hellina Hailu Nigatu, Gashaw Kidanu, Zewdie Mossie, Hussien Seid, Seid Muhie Yimam
 
 <b>[NLP Progress in Indigenous Latin American Languages](https://aclanthology.org/2024.naacl-long.385/) </b><br>
 
@@ -39,7 +39,7 @@ Walelign Tewabe Sewunetie, <b>Atnafu Lambebo Tonja </br>, Tadesse Destaw Belay,H
 2023
 ----
 
-[<b>Cross-lingual Open-Retrieval Question Answering for African Languages](https://arxiv.org/abs/2305.06897) </b> <br>
+<b>[Cross-lingual Open-Retrieval Question Answering for African Languages](https://arxiv.org/abs/2305.06897) </b> <br>
 
 Odunayo Ogundepo, Tajuddeen Gwadabe, Clara Rivera, Jonathan H Clark, Sebastian Ruder, David Adelani, Bonaventure Dossou, <b>Atnafu Lambebo Tonja </b> et al. 
 
