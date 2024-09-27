@@ -1,5 +1,5 @@
 ---
-title: "Publications [(google scholar)](https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en)"
+title: "For my latest publications please visit [google scholar page](https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en)"
 permalink: /publications/
 author_profile: true
 ---
