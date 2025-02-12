@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am visiting student at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), UAE. I hold a PhD in Computer Science from [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico, , where I was supervised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
+Postdoctoral researcher at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), UAE. I hold a PhD in Computer Science from [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico, where I was supervised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
 
 Research interests
 ==================
@@ -20,7 +20,7 @@ Research interests
 News
 ====
 
-- I will be joining [MBZUAI](https://mbzuai.ac.ae/) as Postdoctoral researcher, working with [Prof. Thamar Solorio ](https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en&oi=ao)
+- I will be joining [MBZUAI](https://mbzuai.ac.ae/) as a Postdoctoral researcher, working with [Prof. Thamar Solorio ](https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en&oi=ao)
 - 1 paper accepted at NAACL 2025: [ProverbEval: Exploring LLM Evaluation Challenges for Low-resourceLanguage Understanding](https://arxiv.org/pdf/2411.05049)
 - 1 paper accepted at NeurIPS 2024 D&B Track: [CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark](https://arxiv.org/abs/2406.05967)
 - 2 papers accepted at EMNLP 2024: [The Zeno’s Paradox of ‘Low-Resource’ Languages]() and [Walia-LLM: Enhancing Amharic-LLaMA by Integrating Task-Specific and Generative Datasets](https://arxiv.org/abs/2402.08015)
