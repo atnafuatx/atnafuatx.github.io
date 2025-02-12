@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Atnafu Lambebo Tonja"
 title_separator          : "-"
 name                     : &name "Atnafu Lambebo Tonja"
-description              : &description "Visiting student at Mohamed bin Zayed University of Artificial Intelligence"
+description              : &description "Postdoc at Mohamed bin Zayed University of Artificial Intelligence"
 url                      : https://atnafuatx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "atnafuatx/atnafuatx.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Atnafu Lambebo Tonja"
   avatar           : "at.png"
-  bio              : "Visiting student at Mohamed bin Zayed University of Artificial Intelligence"
+  bio              : "Postdoc at Mohamed bin Zayed University of Artificial Intelligence"
   location         : "Abu Dhabi, UAE"
   employer         :
   pubmed           : 
