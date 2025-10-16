@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Afri‑MCQA — Multimodal Cultural Question Answering for African Languages</title>
+  <meta name="description" content="Afri‑MCQA: a multilingual, culturally grounded visual question answering benchmark for African languages." />
+  <meta property="og:title" content="Afri‑MCQA" />
+  <meta property="og:description" content="A multimodal cultural QA benchmark for African languages." />
+  <meta property="og:image" content="static/images/social_preview.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="static/images/favicon.ico" />
+  <style>
+    :root { --bg:#0b0f14; --card:#121821; --ink:#e8eef6; --muted:#9fb2c8; --brand:#27b07d; --accent:#f2a93b; }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu; color:var(--ink); background:linear-gradient(180deg,#0b0f14, #0b131a 40%, #0b0f14 100%);} 
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px}
+    header{display:flex; justify-content:space-between; align-items:center; padding:22px 0}
+    nav a{margin-left:18px; font-weight:600; color:var(--muted)}
+    .hero{display:grid; grid-template-columns: 1.1fr 0.9fr; gap:28px; align-items:center; padding:40px 0 10px}
+    .title{font-size:clamp(28px,4vw,46px); line-height:1.15; font-weight:800; letter-spacing:.2px}
+    .subtitle{color:var(--muted); margin-top:8px}
+    .cta{display:flex; gap:12px; margin-top:20px}
+    .btn{display:inline-flex; align-items:center; gap:10px; background:var(--brand); color:#081914; font-weight:800; padding:10px 14px; border-radius:14px}
+    .btn.alt{background:#223044; color:var(--ink)}
+    .card{background:var(--card); border:1px solid #1b2431; border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .pad{padding:22px}
+    .grid{display:grid; gap:18px}
+    .two{grid-template-columns: 1fr 1fr}
+    .three{grid-template-columns: repeat(3,1fr)}
+    h2{font-size:26px; margin:18px 0 10px}
+    h3{font-size:18px; color:var(--muted); margin:8px 0}
+    .stat{font-size:32px; font-weight:900}
+    .badge{display:inline-block; background:#1d2735; border:1px solid #2a3950; color:#cfe1f8; padding:6px 10px; border-radius:999px; font-weight:700; font-size:13px}
+    table{width:100%; border-collapse:collapse}
+    th,td{border-bottom:1px dashed #263449; padding:10px 8px; text-align:left}
+    code, pre{background:#0f141c; padding:2px 6px; border-radius:6px}
+    pre{overflow:auto; padding:14px}
+    footer{color:#88a0bd; margin:40px 0 20px}
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} .two,.three{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex; align-items:center; gap:12px">
+        <img src="static/images/afri-mcqa-logo.svg" width="38" height="38" alt="Afri‑MCQA"/>
+        <strong>Afri‑MCQA</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#data">Data</a>
+        <a href="#results">Results</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#bibtex">BibTeX</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="badge">Multilingual · Vision + Language · Africa‑centric</div>
+        <h1 class="title">Afri‑MCQA: Multimodal Cultural Question Answering for African Languages</h1>
+        <p class="subtitle">A benchmark that evaluates cultural and regional knowledge across African contexts using images and multilingual questions/answers.</p>
+        <div class="cta">
+          <a class="btn" href="#data">⬇ Download</a>
+          <a class="btn alt" href="#leaderboard">🚀 Submit to Leaderboard</a>
+          <a class="btn alt" href="#paper">📄 Paper</a>
+          <a class="btn alt" href="#code">💻 Code</a>
+        </div>
+      </div>
+      <div class="card pad">
+        <img src="static/images/teaser.png" alt="Afri‑MCQA teaser" style="width:100%; border-radius:12px"/>
+        <h3 style="margin-top:10px">Teaser examples</h3>
+        <p class="subtitle">Representative samples showing culturally grounded questions in multiple African languages.</p>
+      </div>
+    </section>
+
+    <section id="about" class="grid two">
+      <div class="card pad">
+        <h2>What is Afri‑MCQA?</h2>
+        <p>Afri‑MCQA is a culturally nuanced, multilingual VQA benchmark centered on African languages and communities. It measures whether Multimodal LLMs understand local artifacts, social practices, and region‑specific entities, beyond generic visual recognition.</p>
+        <ul>
+          <li>Languages: <em>e.g., Amharic, Hausa, Igbo, Oromo, Swahili, Yoruba, Zulu, Arabic (Maghrebi), etc.</em></li>
+          <li>Coverage: countries across North, West, East, Central, and Southern Africa</li>
+          <li>Task: single/multi‑choice VQA; short‑answer localization where relevant</li>
+        </ul>
+      </div>
+      <div class="card pad">
+        <h2>Contributions</h2>
+        <ul>
+          <li>First cross‑continental, culture‑aware MCQA across major African languages</li>
+          <li>Human‑vetted cultural categories: food, clothing, crafts, traditions, public signage</li>
+          <li>Strong baselines with open‑source eval code</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="data" class="grid two" style="margin-top:18px">
+      <div class="card pad">
+        <h2>Data Statistics</h2>
+        <div class="grid three">
+          <div><div class="stat">10k+</div><div>Q/A pairs</div></div>
+          <div><div class="stat">20‑40</div><div>Languages</div></div>
+          <div><div class="stat">30+</div><div>Countries</div></div>
+        </div>
+        <p class="subtitle" style="margin-top:6px">Exact counts TBD after final curation.</p>
+        <img src="static/images/stats.png" alt="Dataset statistics" style="width:100%; margin-top:10px; border-radius:12px"/>
+      </div>
+      <div class="card pad">
+        <h2>Download</h2>
+        <p>We host the dataset on <a href="https://huggingface.co/datasets/">Hugging Face Datasets</a> (train/dev/test splits) and release loaders in Python.</p>
+        <ul>
+          <li><strong>Hugging Face:</strong> <a id="hf-link" href="#">hf.co/datasets/afri-nlp/afri-mcqa</a></li>
+          <li><strong>License:</strong> CC BY‑SA 4.0 for the website; dataset license TBD</li>
+          <li><strong>Ethics:</strong> Dataset statement, consent, and redaction policies</li>
+        </ul>
+        <h3>Load with 🤗 Datasets</h3>
+        <pre><code>from datasets import load_dataset
+load_dataset("afri-nlp/afri-mcqa", split="validation")</code></pre>
+      </div>
+    </section>
+
+    <section id="results" class="card pad" style="margin-top:18px">
+      <h2>Baseline Results</h2>
+      <table>
+        <thead><tr><th>Model</th><th>Vision Encoder</th><th>Lang</th><th>Accuracy (dev)</th></tr></thead>
+        <tbody>
+          <tr><td>Open‑CLIP + LLM (demo)</td><td>ViT‑L/14</td><td>Multilingual</td><td>—</td></tr>
+          <tr><td>Qwen‑VL 7B (demo)</td><td>—</td><td>Multilingual</td><td>—</td></tr>
+          <tr><td>GPT‑4o‑mini (demo)</td><td>—</td><td>Multilingual</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <p class="subtitle">Reproduce with our evaluation scripts; update this table for your camera‑ready.</p>
+    </section>
+
+    <section id="leaderboard" class="grid two" style="margin-top:18px">
+      <div class="card pad">
+        <h2>Test your system!</h2>
+        <p>Submit predictions to our <strong>EvalAI</strong> leaderboard. We provide a starter notebook and a submission validator.</p>
+        <ol>
+          <li>Download the test images & question JSON</li>
+          <li>Run inference and produce a predictions.json</li>
+          <li>Upload to EvalAI challenge <em>Afri‑MCQA</em></li>
+        </ol>
+        <div class="cta">
+          <a class="btn" href="#">Go to Leaderboard</a>
+          <a class="btn alt" href="#">Starter Notebook</a>
+        </div>
+      </div>
+      <div class="card pad">
+        <h2>Submission Format</h2>
+        <pre><code>{
+  "submission_version": 1,
+  "preds": [
+    {"question_id": "AMCQA_000001", "answer": "B"},
+    {"question_id": "AMCQA_000002", "answer": "D"}
+  ]
+}</code></pre>
+        <p class="subtitle">Multi‑choice labels: A/B/C/D. For multilingual free‑form, use the <code>text</code> field.</p>
+      </div>
+    </section>
+
+    <section id="paper" class="card pad" style="margin-top:18px">
+      <h2>Paper</h2>
+      <p>Preprint coming soon on arXiv.</p>
+    </section>
+
+    <section id="code" class="card pad" style="margin-top:18px">
+      <h2>Code</h2>
+      <p>Dataset builders and evaluation scripts on GitHub: <a href="#">github.com/afri-nlp/afri-mcqa</a>.</p>
+    </section>
+
+    <!-- NEW: Motivation -->
+    <section id="motivation" class="card pad" style="margin-top:18px">
+      <h2>Motivation: Why Afri‑MCQA?</h2>
+      <p>Multimodal LLMs increasingly claim global competence, yet most benchmarks under‑represent African cultures, languages, and visual context. Afri‑MCQA aims to close this gap by measuring culturally grounded understanding across regions and languages at scale.</p>
+      <div class="grid three" style="margin-top:10px">
+        <div><div class="stat">&lt;5%*</div><div>of V&amp;L samples involve African contexts</div></div>
+        <div><div class="stat">20–40</div><div>Languages (phase 1)</div></div>
+        <div><div class="stat">5</div><div>Macro‑regions (N/W/E/C/S Africa)</div></div>
+      </div>
+      <p class="subtitle" style="margin-top:6px">*Indicative; exact figures to be updated in the paper.</p>
+      <div class="grid two" style="margin-top:12px">
+        <div>
+          <h3>Core Goals</h3>
+          <ul>
+            <li><strong>Cultural validity</strong>: questions reflect authentic local practices, artifacts, and language usage.</li>
+            <li><strong>Linguistic breadth</strong>: multiple African languages, dialectal variants where feasible.</li>
+            <li><strong>Fair evaluation</strong>: per‑language and per‑category breakdowns, plus overall scores.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Categories</h3>
+          <ul>
+            <li>Food &amp; agriculture</li>
+            <li>Clothing &amp; crafts</li>
+            <li>Public spaces &amp; signage</li>
+            <li>Traditions &amp; social practices</li>
+            <li>Local objects &amp; landmarks</li>
+          </ul>
+        </div>
+      </div>
+      <img src="static/images/map_placeholder.png" alt="Regional coverage map" style="width:100%; margin-top:10px; border-radius:12px"/>
+    </section>
+
+    <!-- NEW: Dataset Construction & Ethics -->
+    <section id="construction" class="grid two" style="margin-top:18px">
+      <div class="card pad">
+        <h2>Dataset Construction</h2>
+        <ol>
+          <li><strong>Sourcing</strong>: community contributors, local photographers, and permissive repositories (e.g., CC‑BY/CC0). Sensitive content excluded by policy.</li>
+          <li><strong>Authoring</strong>: native speakers craft MCQA items (A/B/C/D) and rationales; ambiguity checks added.</li>
+          <li><strong>Validation</strong>: cross‑lingual verification and pilot studies; inter‑annotator agreement reported.</li>
+          <li><strong>Splits</strong>: train/dev/test with careful entity and region de‑duplication to reduce leakage.</li>
+        </ol>
+        <h3>Schema</h3>
+        <pre><code>{
+  "id": "AMCQA_000123",
+  "image": "images/region/sample.jpg",
+  "language": "sw",
+  "question": "...",
+  "choices": {"A": "...", "B": "...", "C": "...", "D": "..."},
+  "answer": "B",
+  "category": "clothing",
+  "country": "TZ",
+  "rationale": "..."
+}</code></pre>
+      </div>
+      <div class="card pad">
+        <h2>Ethics &amp; Governance</h2>
+        <ul>
+          <li><strong>Consent &amp; rights</strong>: documented consent for identifiable people; removal process via contact form.</li>
+          <li><strong>Representation</strong>: balancing across regions, cultures, and urban/rural scenes where feasible.</li>
+          <li><strong>Privacy</strong>: PII redaction; default blur for faces of minors.</li>
+          <li><strong>Attribution</strong>: credit to contributors; metadata preserves original authorship when licensed.</li>
+          <li><strong>Use policy</strong>: non‑harmful research uses; details in dataset card.</li>
+        </ul>
+        <p class="subtitle">See the dataset card for full annotation guidelines and redaction policies.</p>
+      </div>
+    </section>
+
+    <!-- NEW: Community & Contribute -->
+    <section id="community" class="card pad" style="margin-top:18px">
+      <h2>Community &amp; Contribute</h2>
+      <p>Afri‑MCQA is community‑driven. We welcome contributions across languages, annotation, model baselines, and documentation.</p>
+      <div class="grid three">
+        <div>
+          <h3>Get Involved</h3>
+          <ul>
+            <li>Join our Discord/Slack (link)</li>
+            <li>Share feedback via GitHub Discussions</li>
+            <li>Propose new language or category</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contributor Guide</h3>
+          <ul>
+            <li>Annotation checklist</li>
+            <li>Quality review protocol</li>
+            <li>Submitting a new baseline</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Acknowledgements</h3>
+          <ul>
+            <li>Community annotators and language leads</li>
+            <li>Partner labs &amp; sponsors</li>
+            <li>Open‑source maintainers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta" style="margin-top:12px">
+        <a class="btn" href="#">Join the discussion</a>
+        <a class="btn alt" href="#">Contribute on GitHub</a>
+      </div>
+    </section>
+
+    <section id="bibtex" class="card pad" style="margin-top:18px">
+      <h2>BibTeX</h2>
+      <pre id="bib"><code>@misc{afri_mcqa2025,
+  title={Afri-MCQA: Multimodal Cultural Question Answering for African Languages},
+  author={First Author and Second Author and et al.},
+  year={2025},
+  eprint={XXXX.XXXXX},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}</code></pre>
+      <button class="btn" onclick="copyBib()">Copy BibTeX</button>
+    </section>
+
+    <footer>
+      <p>© 2025 Afri‑MCQA authors. Website adapted from the excellent Academic Project Page Template and inspired by CVQA. Licensed under CC BY‑SA 4.0 for the website content. Dataset license noted above.</p>
+    </footer>
+  </div>
+  <script>
+    function copyBib(){
+      const t=document.getElementById('bib').innerText; navigator.clipboard.writeText(t); alert('BibTeX copied');
+    }
+  </script>
+</body>
+</html>
