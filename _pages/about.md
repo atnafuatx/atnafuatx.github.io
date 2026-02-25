@@ -20,7 +20,7 @@ Research interests
 News
 ====
 
-- After spending successfull year at [MBZUAI](https://mbzuai.ac.ae/) i will be joining [UCL](https://www.ucl.ac.uk/) as Google DeepMind Fellow
+- After spending successfull year at [MBZUAI](https://mbzuai.ac.ae/), i will be joining [UCL](https://www.ucl.ac.uk/) as Google DeepMind Fellow
 - I will be joining [MBZUAI](https://mbzuai.ac.ae/) as a Postdoctoral researcher, working with [Prof. Thamar Solorio ](https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en&oi=ao)
 - 1 paper accepted at NAACL 2025: [ProverbEval: Exploring LLM Evaluation Challenges for Low-resourceLanguage Understanding](https://arxiv.org/pdf/2411.05049)
 - 1 paper accepted at NeurIPS 2024 D&B Track: [CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark](https://arxiv.org/abs/2406.05967)
