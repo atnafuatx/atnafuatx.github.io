@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Postdoctoral researcher at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), UAE. I hold a PhD in Computer Science from [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico, where I was supervised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
+Google DeepMInd Acadmic Fellow at [UCL](https://www.ucl.ac.uk/). Prevously I was Postdoctoral researcher at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), UAE. I hold a PhD in Computer Science from [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico, where I was supervised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
 
 Research interests
 ==================
