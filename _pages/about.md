@@ -80,9 +80,22 @@ redirect_from:
 <!-- ============================================================ -->
 <section class="block block--spotlight" data-reveal>
   <div class="block-label">Spotlight</div>
-  <article class="spotlight-card">
+
+  <article class="spotlight-card" data-reveal>
     <div class="spotlight-meta">
-      <span class="badge badge--award">★ Best Paper Award</span>
+      <span class="badge badge--award">★ Outstanding Paper</span>
+      <span class="badge badge--venue">EMNLP 2024</span>
+    </div>
+    <h3 class="spotlight-title">
+      <a href="https://aclanthology.org/2024.emnlp-main.983.pdf">The Zeno's Paradox of "Low-Resource" Languages</a>
+    </h3>
+    <p class="spotlight-authors">Hellina H. Nigatu, <span class="me">Atnafu Lambebo Tonja</span>, Benjamin Rosman, Thamar Solorio, Monojit Choudhury</p>
+    <p class="spotlight-blurb">A critique of the "low-resource" label itself — arguing that the term collapses meaningfully different language situations and obscures what actually needs fixing.</p>
+  </article>
+
+  <article class="spotlight-card" data-reveal style="--rd:140ms;">
+    <div class="spotlight-meta">
+      <span class="badge badge--award">★ Best Paper · Area Chair</span>
       <span class="badge badge--venue">IJCNLP-AACL 2023</span>
     </div>
     <h3 class="spotlight-title">
@@ -92,6 +105,7 @@ redirect_from:
     <p class="spotlight-blurb">A benchmark for news topic classification across 16 African languages, with strong baselines and a public dataset.</p>
     <a class="spotlight-cta" href="{{ '/publications/' | relative_url }}">See all publications →</a>
   </article>
+
 </section>
 
 <!-- ============================================================ -->

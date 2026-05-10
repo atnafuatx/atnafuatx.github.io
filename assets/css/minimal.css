@@ -493,6 +493,9 @@ footer.site .foot-meta {
 .block--spotlight {
   /* nothing on the outer container itself; the card does the work */
 }
+.spotlight-card + .spotlight-card {
+  margin-top: 1rem;
+}
 .spotlight-card {
   position: relative;
   padding: 1.5rem 1.6rem 1.4rem;
