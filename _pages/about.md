@@ -1,73 +1,81 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+layout: minimal
+title: "Atnafu Lambebo Tonja"
+excerpt: "Google DeepMind Academic Fellow at UCL · NLP for under-resourced languages · London, UK"
+redirect_from:
   - /about/
   - /about.html
 ---
-Google DeepMInd Acadmic Fellow at [University College London(UCL)](https://www.ucl.ac.uk/). Pervously, I was Postdoctoral researcher at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/), UAE. I hold a PhD in Computer Science from [Instituto Politécnico Nacional](https://www.ipn.mx/) , Mexico, where I was supervised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
 
-Research interests
-==================
+<p class="lede has-drop" data-reveal style="--rd:160ms;">
+I'm a Google DeepMind Academic Fellow at <a href="https://www.ucl.ac.uk/">University College London</a>.
+Previously I was a postdoctoral researcher at <a href="https://mbzuai.ac.ae/">MBZUAI</a> in the UAE,
+working with <a href="https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en">Prof. Thamar Solorio</a>.
+I hold a PhD in Computer Science from <a href="https://www.ipn.mx/">Instituto Politécnico Nacional</a>, Mexico,
+where I was advised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
+</p>
 
-- **NLP for under-resourced languages**
-- **Multilingual language models**
-- **Evaluation benchmarks**
-- **Speech & Multimodal NLP**
+<p data-reveal style="--rd:220ms;">
+My research focuses on natural language processing for the world's
+under-resourced languages — building multilingual language models, evaluation
+benchmarks, and speech and multimodal systems that serve communities
+typically left out of mainstream NLP.
+</p>
 
-News
-====
+<h2 data-reveal>Research interests</h2>
 
-- After spending successfull year at [MBZUAI](https://mbzuai.ac.ae/), i will be joining [UCL](https://www.ucl.ac.uk/) as Google DeepMind Fellow
-- I will be joining [MBZUAI](https://mbzuai.ac.ae/) as a Postdoctoral researcher, working with [Prof. Thamar Solorio ](https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en&oi=ao)
-- 1 paper accepted at NAACL 2025: [ProverbEval: Exploring LLM Evaluation Challenges for Low-resourceLanguage Understanding](https://arxiv.org/pdf/2411.05049)
-- 1 paper accepted at NeurIPS 2024 D&B Track: [CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark](https://arxiv.org/abs/2406.05967)
-- 2 papers accepted at EMNLP 2024: [The Zeno’s Paradox of ‘Low-Resource’ Languages]() and [Walia-LLM: Enhancing Amharic-LLaMA by Integrating Task-Specific and Generative Datasets](https://arxiv.org/abs/2402.08015)
-- 1 paper accepted at LREC-COLING 2024 : [EthioLLM: Multilingual Large Language Models for Ethiopian Languages with Task Evaluation](https://arxiv.org/abs/2403.13737)
-- 1 paper accepted at NAACL 2024 :[NLP Progress in Indigenous Latin American Languages]()
-- 2 paper accepted at EMNLP 2023 : [The Less the Merrier? Investigating Language Representation in Multilingual Models]()  and [Cross-lingual Open-Retrieval Question Answering for African Languages](https://arxiv.org/pdf/2305.06897)
-- 1 paper accepted at TACL:[AfriSpeech-200: Pan-African accented speech dataset for clinical and general domain ASR](https://arxiv.org/pdf/2310.00274)
-- 1 paper accepted at AACL 2023:[MasakhaNEWS](https://arxiv.org/abs/2304.09972)
-- 1 paper accepted at INTERSPEECH 2023: [AfriNames: Most ASR models &#34;butcher&#34; African Names](https://arxiv.org/pdf/2306.00253)
+<ul class="tags" data-reveal style="--rd:60ms;">
+  <li>NLP for under-resourced languages</li>
+  <li>Multilingual language models</li>
+  <li>Evaluation benchmarks</li>
+  <li>Speech &amp; multimodal NLP</li>
+</ul>
 
-<!-- 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<h2 data-reveal>News</h2>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<ul class="bare news">
+  <li data-reveal>
+    <span class="date">2025</span>
+    <span class="body">Joining <a href="https://www.ucl.ac.uk/">UCL</a> as a Google DeepMind Academic Fellow after a successful year at MBZUAI.</span>
+  </li>
+  <li data-reveal style="--rd:40ms;">
+    <span class="date">2025</span>
+    <span class="body">Joined <a href="https://mbzuai.ac.ae/">MBZUAI</a> as a postdoctoral researcher with Prof. Thamar Solorio.</span>
+  </li>
+  <li data-reveal style="--rd:80ms;">
+    <span class="date">2025</span>
+    <span class="body">1 paper at <strong>NAACL 2025</strong>: <a href="https://arxiv.org/pdf/2411.05049">ProverbEval — LLM evaluation challenges for low-resource language understanding</a>.</span>
+  </li>
+  <li data-reveal style="--rd:120ms;">
+    <span class="date">2024</span>
+    <span class="body">1 paper at <strong>NeurIPS 2024 D&amp;B</strong>: <a href="https://arxiv.org/abs/2406.05967">CVQA — culturally-diverse multilingual VQA benchmark</a>.</span>
+  </li>
+  <li data-reveal style="--rd:160ms;">
+    <span class="date">2024</span>
+    <span class="body">2 papers at <strong>EMNLP 2024</strong>: Zeno's Paradox of "Low-Resource" Languages &amp; <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
+  </li>
+  <li data-reveal style="--rd:200ms;">
+    <span class="date">2024</span>
+    <span class="body">1 paper at <strong>LREC-COLING 2024</strong>: <a href="https://arxiv.org/abs/2403.13737">EthioLLM</a>.</span>
+  </li>
+  <li data-reveal style="--rd:240ms;">
+    <span class="date">2024</span>
+    <span class="body">1 paper at <strong>NAACL 2024</strong>: NLP Progress in Indigenous Latin American Languages.</span>
+  </li>
+  <li data-reveal style="--rd:280ms;">
+    <span class="date">2023</span>
+    <span class="body">2 papers at <strong>EMNLP 2023</strong>; 1 at <strong>TACL</strong> (AfriSpeech-200); 1 at <strong>AACL</strong> (MasakhaNEWS, best paper); 1 at <strong>INTERSPEECH</strong> (AfriNames).</span>
+  </li>
+</ul>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<h2 data-reveal>Elsewhere</h2>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+<p data-reveal style="font-family: var(--sans); font-size: 0.92rem;">
+  <a href="https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en">Google Scholar</a> &nbsp;·&nbsp;
+  <a href="https://github.com/atnafuatx">GitHub</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/atnafu-lambebo-t-6b21a5184/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://twitter.com/AtnafuLambebo">Twitter</a> &nbsp;·&nbsp;
+  <a href="https://www.researchgate.net/profile/Atnafu-Lambebo-Tonja">ResearchGate</a> &nbsp;·&nbsp;
+  <a href="mailto:atnafuatx@gmail.com">Email</a>
+</p>

@@ -1,0 +1,44 @@
+{% comment %}
+  Publications-by-year bar chart.
+  Hand-rolled SVG — no JS, no dependencies.
+  Data is hardcoded here; update the `years` list when papers are added.
+{% endcomment %}
+
+{% assign years = "2021,2022,2023,2024,2025,2026" | split: "," %}
+{% assign counts = "2,4,9,7,4,1" | split: "," %}
+
+<div class="viz pubs-chart" data-reveal>
+  <div class="viz-title">Publications per year</div>
+  <svg viewBox="0 0 600 200" preserveAspectRatio="xMidYMid meet" aria-label="bar chart of publications per year">
+    <!-- baseline -->
+    <line class="axis" x1="40" y1="160" x2="580" y2="160" />
+
+    {% assign max = 9 %}
+    {% assign bar_w = 60 %}
+
+    {% for y in years %}
+      {% assign i = forloop.index0 %}
+      {% assign c = counts[i] | plus: 0 %}
+      {% assign h = c | times: 130 | divided_by: max %}
+      {% assign x_pos = i | times: 90 | plus: 60 %}
+      {% assign y_pos = 160 | minus: h %}
+
+      <!-- bar -->
+      <rect class="bar"
+            x="{{ x_pos }}" y="{{ y_pos }}"
+            width="{{ bar_w }}" height="{{ h }}"
+            rx="1.5">
+        <title>{{ y }}: {{ c }} paper{% if c != "1" %}s{% endif %}</title>
+      </rect>
+
+      <!-- count label above bar -->
+      {% assign label_x = x_pos | plus: 30 %}
+      {% assign label_y = y_pos | minus: 8 %}
+      <text class="label-y" x="{{ label_x }}" y="{{ label_y }}" text-anchor="middle">{{ c }}</text>
+
+      <!-- year label below baseline -->
+      {% assign year_y = 180 %}
+      <text class="label-x" x="{{ label_x }}" y="{{ year_y }}" text-anchor="middle">{{ y }}</text>
+    {% endfor %}
+  </svg>
+</div>

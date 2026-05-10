@@ -1,26 +1,52 @@
 ---
-layout: archive
-title: "CV"
+layout: minimal
+title: "Curriculum Vitae"
+excerpt: "A condensed CV. For the full version, [email me](mailto:atnafuatx@gmail.com)."
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
-{% include base_path %}
 
-Education
-=========
+{% include viz/career-path.html %}
 
-* B.S. in Computer Science, Madawalabu University, Ethiopa, 2015
-* M.S. in Information Technology, Wolaita Sodo University,Ethiopa, 2021
-* Ph.D in Computer Science, Instituto Politecnico Nacional, Mexico, 2022 - 2024
-* Research Scholar: University of Colorado, Colorado Springs, USA 2023
-* Visiting student: Mohamed bin Zayed University of Artificial Intelligence, UAE, 2024
+<h2 data-reveal>Education</h2>
 
-Skills
-======
+<div class="cv-row" data-reveal>
+  <span class="when">2022 – 2024</span>
+  <span class="what">PhD, Computer Science <em>Instituto Politécnico Nacional, Mexico City</em></span>
+</div>
+<div class="cv-row" data-reveal style="--rd:60ms;">
+  <span class="when">2021</span>
+  <span class="what">MSc, Information Technology <em>Wolaita Sodo University, Ethiopia</em></span>
+</div>
+<div class="cv-row" data-reveal style="--rd:120ms;">
+  <span class="when">2015</span>
+  <span class="what">BSc, Computer Science <em>Madawalabu University, Ethiopia</em></span>
+</div>
 
-* Languages
-  * English, Amharic, Wolaita
-* Coding
-  * Python, Java, matlab, C#, sql, ...
+<h2 data-reveal>Research positions</h2>
+
+<div class="cv-row" data-reveal>
+  <span class="when">2025 –</span>
+  <span class="what">Google DeepMind Academic Fellow <em>University College London, UK</em></span>
+</div>
+<div class="cv-row" data-reveal style="--rd:60ms;">
+  <span class="when">2024 – 25</span>
+  <span class="what">Postdoctoral Researcher <em>MBZUAI, UAE — with Prof. Thamar Solorio</em></span>
+</div>
+<div class="cv-row" data-reveal style="--rd:120ms;">
+  <span class="when">2024</span>
+  <span class="what">Visiting Student <em>MBZUAI, UAE</em></span>
+</div>
+<div class="cv-row" data-reveal style="--rd:180ms;">
+  <span class="when">2023</span>
+  <span class="what">Research Scholar <em>University of Colorado, Colorado Springs, USA</em></span>
+</div>
+
+<h2 data-reveal>Languages</h2>
+
+<p data-reveal>English · Amharic · Wolaita</p>
+
+<h2 data-reveal>Programming</h2>
+
+<p data-reveal>Python · Java · MATLAB · C# · SQL</p>

@@ -8,9 +8,9 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Atnafu Lambebo Tonja"
-title_separator          : "-"
+title_separator          : "·"
 name                     : &name "Atnafu Lambebo Tonja"
-description              : &description "Google DeepMind Academic Fellow at University Collage London. "
+description              : &description "Google DeepMind Academic Fellow at University College London. NLP for under-resourced languages."
 url                      : https://atnafuatx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "atnafuatx/atnafuatx.github.io"
@@ -71,9 +71,10 @@ social:
   links: # An array of links to social media profiles
 
 
-# Analytics
+# Analytics — disabled. Set provider and tracking_id, then add an
+# include reference in _layouts/minimal.html if you want analytics back.
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false
   google:
     tracking_id          :
 
@@ -82,7 +83,7 @@ analytics:
 author:
   name             : "Atnafu Lambebo Tonja"
   avatar           : "at.png"
-  bio              : "Google DeepMind Academic Fellow at University Collage London"
+  bio              : "Google DeepMind Academic Fellow at University College London"
   location         : "London, UK"
   employer         :
   pubmed           : 
@@ -175,15 +176,6 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -196,54 +188,27 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout: minimal
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
-  # _teaching
-  # - scope:
-  #     path: ""
-  #     type: teaching
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+      layout: minimal
+      author_profile: false
   # _talks
   - scope:
       path: ""
       type: talks
     values:
-      layout: talk
-      author_profile: true
-      share: true
+      layout: minimal
+      author_profile: false
+      share: false
 
 # Sass/SCSS
 sass:

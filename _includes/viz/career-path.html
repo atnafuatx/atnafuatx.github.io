@@ -1,0 +1,65 @@
+<!--
+  Research-journey ribbon.
+  Hand-drawn horizontal SVG showing the academic path through five
+  countries, with year labels and an animated drawing-in line.
+-->
+<div class="viz career-path" data-reveal>
+  <div class="viz-title">Research path</div>
+  <svg viewBox="0 0 720 200" preserveAspectRatio="xMidYMid meet" aria-label="map of research locations over time">
+
+    <!-- the drawing line: smooth cubic curve through the five stops -->
+    <path class="path-line"
+          d="M 70 110
+             C 130 50, 200 50, 240 110
+             S 330 170, 380 110
+             S 480 50,  520 110
+             S 620 170, 660 110"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- 1. Ethiopia (2015–2021) -->
+    <g class="stop" transform="translate(70 110)">
+      <circle class="outer" r="7"/>
+      <circle class="inner" r="3"/>
+      <text class="year"  x="0" y="-22" text-anchor="middle">2015 – 2021</text>
+      <text class="place" x="0" y="32"  text-anchor="middle">Ethiopia</text>
+      <text class="role"  x="0" y="48"  text-anchor="middle">BSc · MSc</text>
+    </g>
+
+    <!-- 2. Mexico (2022–2024 PhD) -->
+    <g class="stop" transform="translate(240 110)">
+      <circle class="outer" r="7"/>
+      <circle class="inner" r="3"/>
+      <text class="year"  x="0" y="-22" text-anchor="middle">2022 – 2024</text>
+      <text class="place" x="0" y="32"  text-anchor="middle">Mexico</text>
+      <text class="role"  x="0" y="48"  text-anchor="middle">PhD · IPN</text>
+    </g>
+
+    <!-- 3. USA (2023 Visiting) -->
+    <g class="stop" transform="translate(380 110)">
+      <circle class="outer" r="7"/>
+      <circle class="inner" r="3"/>
+      <text class="year"  x="0" y="-22" text-anchor="middle">2023</text>
+      <text class="place" x="0" y="32"  text-anchor="middle">USA</text>
+      <text class="role"  x="0" y="48"  text-anchor="middle">UCCS Scholar</text>
+    </g>
+
+    <!-- 4. UAE (2024–25 Postdoc) -->
+    <g class="stop" transform="translate(520 110)">
+      <circle class="outer" r="7"/>
+      <circle class="inner" r="3"/>
+      <text class="year"  x="0" y="-22" text-anchor="middle">2024 – 2025</text>
+      <text class="place" x="0" y="32"  text-anchor="middle">UAE</text>
+      <text class="role"  x="0" y="48"  text-anchor="middle">MBZUAI Postdoc</text>
+    </g>
+
+    <!-- 5. UK (2025– DeepMind/UCL) -->
+    <g class="stop" transform="translate(660 110)">
+      <circle class="outer" r="7"/>
+      <circle class="inner" r="3"/>
+      <text class="year"  x="0" y="-22" text-anchor="middle">2025 –</text>
+      <text class="place" x="0" y="32"  text-anchor="middle">UK</text>
+      <text class="role"  x="0" y="48"  text-anchor="middle">DeepMind / UCL</text>
+    </g>
+  </svg>
+</div>

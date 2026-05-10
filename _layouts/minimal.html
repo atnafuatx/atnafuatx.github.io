@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en-US' | slice: 0,2 }}">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title | strip_html | strip_newlines }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 180 }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
+
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body class="page-{{ page.permalink | default: 'home' | replace: '/', '' | default: 'home' }}">
+
+<!-- ambient effect layers -->
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="spotlight" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="wrap{% if page.layout_wide %} wide{% endif %}">
+
+  <header class="site">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {% include site-mark.html %}
+      <span class="name">{{ site.author.name | default: site.title }}</span>
+    </a>
+    <nav>
+      <a href="{{ '/' | relative_url }}"{% if page.permalink == '/' or page.permalink == '/about/' %} class="current"{% endif %}>About</a>
+      <a href="{{ '/publications/' | relative_url }}"{% if page.permalink contains 'publications' %} class="current"{% endif %}>Publications</a>
+      <a href="{{ '/cv/' | relative_url }}"{% if page.permalink contains 'cv' %} class="current"{% endif %}>CV</a>
+      <a href="{{ '/talks/' | relative_url }}"{% if page.permalink contains 'talks' %} class="current"{% endif %}>Talks</a>
+      <a href="{{ '/year-archive/' | relative_url }}"{% if page.permalink contains 'archive' or page.permalink contains 'posts' %} class="current"{% endif %}>Blog</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    {% unless page.hide_title %}
+      {% if page.title %}
+        <h1 class="page-title" data-reveal>{{ page.title }}</h1>
+        {% if page.excerpt %}
+          <p class="page-sub" data-reveal style="--rd:80ms;">{{ page.excerpt | markdownify | strip_html }}</p>
+        {% endif %}
+      {% endif %}
+    {% endunless %}
+
+    {{ content }}
+  </main>
+
+  <footer class="site">
+    <span>© {{ 'now' | date: '%Y' }} {{ site.author.name }} · last updated {{ site.time | date: '%b %Y' }}</span>
+    <span>
+      <a class="inline" href="https://github.com/{{ site.author.github | default: 'atnafuatx' }}/{{ site.repository | split: '/' | last }}">Source</a>
+      &nbsp;·&nbsp;
+      <a class="inline" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </span>
+  </footer>
+</div>
+
+<script>
+  /* ---- scroll reveal ---- */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+
+  /* ---- cursor spotlight ---- */
+  var root = document.documentElement, rafId = null, px = 0, py = 0;
+  function apply() {
+    root.style.setProperty('--mx', px + 'px');
+    root.style.setProperty('--my', py + 'px');
+    rafId = null;
+  }
+  window.addEventListener('pointermove', function (e) {
+    px = e.clientX; py = e.clientY;
+    if (!rafId) rafId = requestAnimationFrame(apply);
+  }, { passive: true });
+
+  /* ---- reading progress ---- */
+  var bar = document.getElementById('progress');
+  function tick() {
+    var h = document.documentElement;
+    var t = h.scrollHeight - h.clientHeight;
+    var p = t > 0 ? Math.min(100, (h.scrollTop / t) * 100) : 0;
+    bar.style.setProperty('--p', p + '%');
+  }
+  window.addEventListener('scroll', tick, { passive: true });
+  window.addEventListener('resize', tick);
+  tick();
+</script>
+
+</body>
+</html>

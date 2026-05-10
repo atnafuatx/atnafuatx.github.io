@@ -1,16 +1,39 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: minimal
+title: "Talks &amp; Writing"
+excerpt: "Selected invited talks, tutorials, and notes."
 permalink: /talks/
-author_profile: true
 ---
 
-<!-- {% if site.talkmap_link == true %}
+<h2 data-reveal>Talks</h2>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+{% for t in sorted_talks %}
+  {% unless t.content contains '<!--' and t.content contains 'lorem' %}
+    <div class="entry" data-reveal>
+      <div class="meta">
+        {{ t.date | date: "%Y" }}
+        {% if t.type %} · {{ t.type }}{% endif %}
+        {% if t.venue %} · {{ t.venue }}{% endif %}
+        {% if t.location %} · {{ t.location }}{% endif %}
+      </div>
+      <h3><a href="{{ t.url | relative_url }}">{{ t.title }}</a></h3>
+      {% if t.excerpt %}<p>{{ t.excerpt | strip_html | truncate: 240 }}</p>{% endif %}
+    </div>
+  {% endunless %}
+{% endfor %}
 
+<h2 data-reveal>Blog</h2>
+
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% if sorted_posts.size > 0 %}
+  {% for p in sorted_posts %}
+    <div class="entry" data-reveal>
+      <div class="meta">{{ p.date | date: "%b %Y" }}{% if p.tags %} · {{ p.tags | join: ', ' }}{% endif %}</div>
+      <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+      {% if p.excerpt %}<p>{{ p.excerpt | strip_html | truncate: 240 }}</p>{% endif %}
+    </div>
+  {% endfor %}
+{% else %}
+  <p data-reveal style="color: var(--muted); font-family: var(--sans); font-size: 0.9rem;">No blog posts yet — coming soon.</p>
 {% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %} -->
