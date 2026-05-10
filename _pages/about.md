@@ -8,7 +8,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 <header class="hero" data-reveal>
   <div class="portrait">
     <img src="{{ '/images/at.jpg' | relative_url }}" alt="Atnafu Lambebo Tonja" loading="eager" width="130" height="130">
@@ -27,8 +26,11 @@ redirect_from:
 </header>
 
 <!-- ============================================================ -->
+
 <!-- Block 1 — Bio: card with left accent rail + drop cap         -->
+
 <!-- ============================================================ -->
+
 <section class="block block--bio" data-reveal>
   <div class="block-label">About</div>
   <p class="lede has-drop">
@@ -47,8 +49,11 @@ redirect_from:
 </section>
 
 <!-- ============================================================ -->
+
 <!-- Block 2 — Research interests: 2x2 numbered grid              -->
+
 <!-- ============================================================ -->
+
 <section class="block block--interests" data-reveal>
   <div class="block-label">Research interests</div>
   <div class="interest-grid">
@@ -69,19 +74,22 @@ redirect_from:
     </article>
     <article class="interest-card" data-reveal style="--rd:260ms;">
       <span class="interest-num">04</span>
-      <h3 class="interest-title">Speech &amp; multimodal</h3>
+      <h3 class="interest-title">Speech & multimodal</h3>
       <p class="interest-body">Speech recognition for African accents and clinical domains; vision-and-language datasets that reflect cultures outside the Western web.</p>
     </article>
   </div>
 </section>
 
 <!-- ============================================================ -->
+
 <!-- Block 3 — Featured paper spotlight                            -->
+
 <!-- ============================================================ -->
+
 <section class="block block--spotlight" data-reveal>
   <div class="block-label">Spotlight</div>
 
-  <article class="spotlight-card" data-reveal>
+<article class="spotlight-card" data-reveal>
     <div class="spotlight-meta">
       <span class="badge badge--award">★ Outstanding Paper</span>
       <span class="badge badge--venue">EMNLP 2024</span>
@@ -93,7 +101,7 @@ redirect_from:
     <p class="spotlight-blurb">A critique of the "low-resource" label itself — arguing that the term collapses meaningfully different language situations and obscures what actually needs fixing.</p>
   </article>
 
-  <article class="spotlight-card" data-reveal style="--rd:140ms;">
+<article class="spotlight-card" data-reveal style="--rd:140ms;">
     <div class="spotlight-meta">
       <span class="badge badge--award">★ Best Paper · Area Chair</span>
       <span class="badge badge--venue">IJCNLP-AACL 2023</span>
@@ -109,14 +117,17 @@ redirect_from:
 </section>
 
 <!-- ============================================================ -->
+
 <!-- Block 4 — News: vertical timeline                             -->
+
 <!-- ============================================================ -->
+
 <section class="block block--timeline" data-reveal>
   <div class="block-label">News</div>
   <ol class="timeline">
     <li class="t-item" data-reveal>
       <span class="t-dot" aria-hidden="true"></span>
-      <span class="t-date">2025</span>
+      <span class="t-date">2026</span>
       <span class="t-body">Joined <a href="https://www.ucl.ac.uk/">UCL</a> as a Google DeepMind Academic Fellow.</span>
     </li>
     <li class="t-item" data-reveal style="--rd:60ms;">
@@ -132,12 +143,12 @@ redirect_from:
     <li class="t-item" data-reveal style="--rd:180ms;">
       <span class="t-dot" aria-hidden="true"></span>
       <span class="t-date">2024</span>
-      <span class="t-body">1 paper at <strong>NeurIPS 2024 D&amp;B</strong>: <a href="https://arxiv.org/abs/2406.05967">CVQA — culturally-diverse multilingual VQA benchmark</a>.</span>
+      <span class="t-body">1 paper at <strong>NeurIPS 2024 D&B</strong>: <a href="https://arxiv.org/abs/2406.05967">CVQA — culturally-diverse multilingual VQA benchmark</a>.</span>
     </li>
     <li class="t-item" data-reveal style="--rd:240ms;">
       <span class="t-dot" aria-hidden="true"></span>
       <span class="t-date">2024</span>
-      <span class="t-body">2 papers at <strong>EMNLP 2024</strong>: <a href="https://aclanthology.org/2024.emnlp-main.983.pdf">Zeno's Paradox of "Low-Resource" Languages</a> <strong style="color: var(--accent);">★ Outstanding Paper</strong> &amp; <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
+      <span class="t-body">2 papers at <strong>EMNLP 2024</strong>: <a href="https://aclanthology.org/2024.emnlp-main.983.pdf">Zeno's Paradox of "Low-Resource" Languages</a> <strong style="color: var(--accent);">★ Outstanding Paper</strong> & <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
     </li>
     <li class="t-item" data-reveal style="--rd:300ms;">
       <span class="t-dot" aria-hidden="true"></span>

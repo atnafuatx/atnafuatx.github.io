@@ -4,7 +4,6 @@ excerpt: "Selected peer-reviewed work. Latest list on [Google Scholar](https://s
 permalink: /publications/
 layout: minimal
 ---
-
 {%- assign all_pubs = site.data.publications -%}
 {%- assign featured = all_pubs | where: "featured", true -%}
 
@@ -67,4 +66,5 @@ layout: minimal
 </div>
 
 {%- endfor %}
+
 </section>
