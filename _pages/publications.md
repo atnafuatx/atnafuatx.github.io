@@ -39,7 +39,7 @@ layout: minimal
   <div class="stat"><span class="n">{{ total_count }}</span><span class="l">Papers</span></div>
   <div class="stat"><span class="n">'{{ first_2 }}–'{{ last_2 }}</span><span class="l">Active</span></div>
   <div class="stat"><span class="n">{{ venues | size }}</span><span class="l">Venues</span></div>
-  <div class="stat"><span class="n">{{ award_count }}</span><span class="l">Best paper</span></div>
+  <div class="stat"><span class="n">{{ award_count }}</span><span class="l">Award{% if award_count != 1 %}s{% endif %}</span></div>
 </div>
 
 {% include viz/pubs-chart.html %}
