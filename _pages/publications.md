@@ -26,11 +26,18 @@ layout: minimal
     {%- assign venues = venues | push: p.venue -%}
   {%- endunless -%}
 {%- endfor -%}
-{%- assign award_count = all_pubs | where: "award" | size -%}
+{%- assign awarded = all_pubs | where_exp: "p", "p.award" -%}
+{%- assign award_count = awarded | size -%}
+
+{%- comment -%} format short year range like "21–26" {%- endcomment -%}
+{%- assign first_str = first_year | append: '' -%}
+{%- assign last_str  = last_year  | append: '' -%}
+{%- assign first_2 = first_str | slice: 2, 2 -%}
+{%- assign last_2  = last_str  | slice: 2, 2 -%}
 
 <div class="stats" data-reveal>
   <div class="stat"><span class="n">{{ total_count }}</span><span class="l">Papers</span></div>
-  <div class="stat"><span class="n">{{ first_year }}–{{ last_year | slice: 2, 2 }}</span><span class="l">Active</span></div>
+  <div class="stat"><span class="n">'{{ first_2 }}–'{{ last_2 }}</span><span class="l">Active</span></div>
   <div class="stat"><span class="n">{{ venues | size }}</span><span class="l">Venues</span></div>
   <div class="stat"><span class="n">{{ award_count }}</span><span class="l">Best paper</span></div>
 </div>
