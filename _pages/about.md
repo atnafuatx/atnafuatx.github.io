@@ -3,10 +3,28 @@ permalink: /
 layout: minimal
 title: "Atnafu Lambebo Tonja"
 excerpt: "Google DeepMind Academic Fellow at UCL · NLP for under-resourced languages · London, UK"
+hide_title: true
 redirect_from:
   - /about/
   - /about.html
 ---
+
+<header class="hero" data-reveal>
+  <div class="portrait">
+    <img src="{{ '/images/at.jpg' | relative_url }}" alt="Atnafu Lambebo Tonja" loading="eager" width="130" height="130">
+  </div>
+  <div class="hero-text">
+    <h1 class="page-title hero-title">Atnafu Lambebo Tonja</h1>
+    <p class="role">
+      <span class="role-tag">Google DeepMind Academic Fellow</span>
+    </p>
+    <p class="affiliation">
+      <a href="https://www.ucl.ac.uk/">University College London</a>
+      <span class="dot">·</span> London, UK
+    </p>
+    {% include socials.html %}
+  </div>
+</header>
 
 <p class="lede has-drop" data-reveal style="--rd:160ms;">
 I'm a Google DeepMind Academic Fellow at <a href="https://www.ucl.ac.uk/">University College London</a>.
@@ -68,14 +86,3 @@ typically left out of mainstream NLP.
     <span class="body">2 papers at <strong>EMNLP 2023</strong>; 1 at <strong>TACL</strong> (AfriSpeech-200); 1 at <strong>AACL</strong> (MasakhaNEWS, best paper); 1 at <strong>INTERSPEECH</strong> (AfriNames).</span>
   </li>
 </ul>
-
-<h2 data-reveal>Elsewhere</h2>
-
-<p data-reveal style="font-family: var(--sans); font-size: 0.92rem;">
-  <a href="https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en">Google Scholar</a> &nbsp;·&nbsp;
-  <a href="https://github.com/atnafuatx">GitHub</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/atnafu-lambebo-t-6b21a5184/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://twitter.com/AtnafuLambebo">Twitter</a> &nbsp;·&nbsp;
-  <a href="https://www.researchgate.net/profile/Atnafu-Lambebo-Tonja">ResearchGate</a> &nbsp;·&nbsp;
-  <a href="mailto:atnafuatx@gmail.com">Email</a>
-</p>

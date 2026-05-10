@@ -54,12 +54,23 @@
   </main>
 
   <footer class="site">
-    <span>© {{ 'now' | date: '%Y' }} {{ site.author.name }} · last updated {{ site.time | date: '%b %Y' }}</span>
-    <span>
-      <a class="inline" href="https://github.com/{{ site.author.github | default: 'atnafuatx' }}/{{ site.repository | split: '/' | last }}">Source</a>
-      &nbsp;·&nbsp;
-      <a class="inline" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-    </span>
+    <div class="foot-socials" aria-label="Find me elsewhere">
+      <a href="https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en" rel="noopener">Scholar</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/{{ site.author.github | default: 'atnafuatx' }}" rel="noopener">GitHub</a>
+      <span class="sep">·</span>
+      <a href="https://www.linkedin.com/in/atnafu-lambebo-t-6b21a5184/" rel="noopener">LinkedIn</a>
+      <span class="sep">·</span>
+      <a href="https://twitter.com/{{ site.author.twitter | default: 'AtnafuLambebo' }}" rel="noopener">Twitter</a>
+      <span class="sep">·</span>
+      <a href="https://www.researchgate.net/profile/Atnafu-Lambebo-Tonja" rel="noopener">ResearchGate</a>
+      <span class="sep">·</span>
+      <a href="mailto:{{ site.author.email }}" rel="noopener">Email</a>
+    </div>
+    <div class="foot-meta">
+      <span>© {{ 'now' | date: '%Y' }} {{ site.author.name }} · last updated {{ site.time | date: '%b %Y' }}</span>
+      <span><a class="inline" href="https://github.com/{{ site.author.github | default: 'atnafuatx' }}/{{ site.repository | split: '/' | last | default: 'atnafuatx.github.io' }}">Source</a></span>
+    </div>
   </footer>
 </div>
 
