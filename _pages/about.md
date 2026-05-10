@@ -26,63 +26,114 @@ redirect_from:
   </div>
 </header>
 
-<p class="lede has-drop" data-reveal style="--rd:160ms;">
-I'm a Google DeepMind Academic Fellow at <a href="https://www.ucl.ac.uk/">University College London</a>.
-Previously I was a postdoctoral researcher at <a href="https://mbzuai.ac.ae/">MBZUAI</a> in the UAE,
-working with <a href="https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en">Prof. Thamar Solorio</a>.
-I hold a PhD in Computer Science from <a href="https://www.ipn.mx/">Instituto Politécnico Nacional</a>, Mexico,
-where I was advised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
-</p>
+<!-- ============================================================ -->
+<!-- Block 1 — Bio: card with left accent rail + drop cap         -->
+<!-- ============================================================ -->
+<section class="block block--bio" data-reveal>
+  <div class="block-label">About</div>
+  <p class="lede has-drop">
+    I'm a Google DeepMind Academic Fellow at <a href="https://www.ucl.ac.uk/">University College London</a>.
+    Previously I was a postdoctoral researcher at <a href="https://mbzuai.ac.ae/">MBZUAI</a> in the UAE,
+    working with <a href="https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en">Prof. Thamar Solorio</a>.
+    I hold a PhD in Computer Science from <a href="https://www.ipn.mx/">Instituto Politécnico Nacional</a>, Mexico,
+    where I was advised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
+  </p>
+  <p class="bio-secondary">
+    My research focuses on natural language processing for the world's
+    under-resourced languages — building multilingual language models, evaluation
+    benchmarks, and speech and multimodal systems that serve communities
+    typically left out of mainstream NLP.
+  </p>
+</section>
 
-<p data-reveal style="--rd:220ms;">
-My research focuses on natural language processing for the world's
-under-resourced languages — building multilingual language models, evaluation
-benchmarks, and speech and multimodal systems that serve communities
-typically left out of mainstream NLP.
-</p>
+<!-- ============================================================ -->
+<!-- Block 2 — Research interests: 2x2 numbered grid              -->
+<!-- ============================================================ -->
+<section class="block block--interests" data-reveal>
+  <div class="block-label">Research interests</div>
+  <div class="interest-grid">
+    <article class="interest-card" data-reveal style="--rd:80ms;">
+      <span class="interest-num">01</span>
+      <h3 class="interest-title">Under-resourced languages</h3>
+      <p class="interest-body">Bringing modern NLP to languages with little digital text — corpora, models, and benchmarks for African and Indigenous languages.</p>
+    </article>
+    <article class="interest-card" data-reveal style="--rd:140ms;">
+      <span class="interest-num">02</span>
+      <h3 class="interest-title">Multilingual LMs</h3>
+      <p class="interest-body">Training and evaluating small and large multilingual language models that work across high- and low-resource languages.</p>
+    </article>
+    <article class="interest-card" data-reveal style="--rd:200ms;">
+      <span class="interest-num">03</span>
+      <h3 class="interest-title">Evaluation benchmarks</h3>
+      <p class="interest-body">Culturally-aware, linguistically-honest benchmarks — so models are measured on what they actually need to do, not on convenient proxies.</p>
+    </article>
+    <article class="interest-card" data-reveal style="--rd:260ms;">
+      <span class="interest-num">04</span>
+      <h3 class="interest-title">Speech &amp; multimodal</h3>
+      <p class="interest-body">Speech recognition for African accents and clinical domains; vision-and-language datasets that reflect cultures outside the Western web.</p>
+    </article>
+  </div>
+</section>
 
-<h2 data-reveal>Research interests</h2>
+<!-- ============================================================ -->
+<!-- Block 3 — Featured paper spotlight                            -->
+<!-- ============================================================ -->
+<section class="block block--spotlight" data-reveal>
+  <div class="block-label">Spotlight</div>
+  <article class="spotlight-card">
+    <div class="spotlight-meta">
+      <span class="badge badge--award">★ Best Paper Award</span>
+      <span class="badge badge--venue">IJCNLP-AACL 2023</span>
+    </div>
+    <h3 class="spotlight-title">
+      <a href="https://arxiv.org/abs/2304.09972">MasakhaNEWS: News Topic Classification for African Languages</a>
+    </h3>
+    <p class="spotlight-authors">David I. Adelani, Marek Masiak, Israel Abebe Azime, …, <span class="me">Atnafu Lambebo Tonja</span>, …, Pontus Stenetorp</p>
+    <p class="spotlight-blurb">A benchmark for news topic classification across 16 African languages, with strong baselines and a public dataset.</p>
+    <a class="spotlight-cta" href="{{ '/publications/' | relative_url }}">See all publications →</a>
+  </article>
+</section>
 
-<ul class="tags" data-reveal style="--rd:60ms;">
-  <li>NLP for under-resourced languages</li>
-  <li>Multilingual language models</li>
-  <li>Evaluation benchmarks</li>
-  <li>Speech &amp; multimodal NLP</li>
-</ul>
-
-<h2 data-reveal>News</h2>
-
-<ul class="bare news">
-  <li data-reveal>
-    <span class="date">2025</span>
-    <span class="body">Joining <a href="https://www.ucl.ac.uk/">UCL</a> as a Google DeepMind Academic Fellow after a successful year at MBZUAI.</span>
-  </li>
-  <li data-reveal style="--rd:40ms;">
-    <span class="date">2025</span>
-    <span class="body">Joined <a href="https://mbzuai.ac.ae/">MBZUAI</a> as a postdoctoral researcher with Prof. Thamar Solorio.</span>
-  </li>
-  <li data-reveal style="--rd:80ms;">
-    <span class="date">2025</span>
-    <span class="body">1 paper at <strong>NAACL 2025</strong>: <a href="https://arxiv.org/pdf/2411.05049">ProverbEval — LLM evaluation challenges for low-resource language understanding</a>.</span>
-  </li>
-  <li data-reveal style="--rd:120ms;">
-    <span class="date">2024</span>
-    <span class="body">1 paper at <strong>NeurIPS 2024 D&amp;B</strong>: <a href="https://arxiv.org/abs/2406.05967">CVQA — culturally-diverse multilingual VQA benchmark</a>.</span>
-  </li>
-  <li data-reveal style="--rd:160ms;">
-    <span class="date">2024</span>
-    <span class="body">2 papers at <strong>EMNLP 2024</strong>: Zeno's Paradox of "Low-Resource" Languages &amp; <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
-  </li>
-  <li data-reveal style="--rd:200ms;">
-    <span class="date">2024</span>
-    <span class="body">1 paper at <strong>LREC-COLING 2024</strong>: <a href="https://arxiv.org/abs/2403.13737">EthioLLM</a>.</span>
-  </li>
-  <li data-reveal style="--rd:240ms;">
-    <span class="date">2024</span>
-    <span class="body">1 paper at <strong>NAACL 2024</strong>: NLP Progress in Indigenous Latin American Languages.</span>
-  </li>
-  <li data-reveal style="--rd:280ms;">
-    <span class="date">2023</span>
-    <span class="body">2 papers at <strong>EMNLP 2023</strong>; 1 at <strong>TACL</strong> (AfriSpeech-200); 1 at <strong>AACL</strong> (MasakhaNEWS, best paper); 1 at <strong>INTERSPEECH</strong> (AfriNames).</span>
-  </li>
-</ul>
+<!-- ============================================================ -->
+<!-- Block 4 — News: vertical timeline                             -->
+<!-- ============================================================ -->
+<section class="block block--timeline" data-reveal>
+  <div class="block-label">News</div>
+  <ol class="timeline">
+    <li class="t-item" data-reveal>
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2025</span>
+      <span class="t-body">Joined <a href="https://www.ucl.ac.uk/">UCL</a> as a Google DeepMind Academic Fellow.</span>
+    </li>
+    <li class="t-item" data-reveal style="--rd:60ms;">
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2025</span>
+      <span class="t-body">Joined <a href="https://mbzuai.ac.ae/">MBZUAI</a> as a postdoctoral researcher with Prof. Thamar Solorio.</span>
+    </li>
+    <li class="t-item" data-reveal style="--rd:120ms;">
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2025</span>
+      <span class="t-body">1 paper at <strong>NAACL 2025</strong>: <a href="https://arxiv.org/pdf/2411.05049">ProverbEval — LLM evaluation for low-resource languages</a>.</span>
+    </li>
+    <li class="t-item" data-reveal style="--rd:180ms;">
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2024</span>
+      <span class="t-body">1 paper at <strong>NeurIPS 2024 D&amp;B</strong>: <a href="https://arxiv.org/abs/2406.05967">CVQA — culturally-diverse multilingual VQA benchmark</a>.</span>
+    </li>
+    <li class="t-item" data-reveal style="--rd:240ms;">
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2024</span>
+      <span class="t-body">2 papers at <strong>EMNLP 2024</strong>: Zeno's Paradox of "Low-Resource" Languages &amp; <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
+    </li>
+    <li class="t-item" data-reveal style="--rd:300ms;">
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2024</span>
+      <span class="t-body">1 paper at <strong>LREC-COLING 2024</strong>: <a href="https://arxiv.org/abs/2403.13737">EthioLLM</a>.</span>
+    </li>
+    <li class="t-item" data-reveal style="--rd:360ms;">
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2023</span>
+      <span class="t-body">2 papers at <strong>EMNLP 2023</strong>; 1 at <strong>TACL</strong> (AfriSpeech-200); <strong>Best Paper</strong> at <strong>AACL</strong> (MasakhaNEWS); 1 at <strong>INTERSPEECH</strong> (AfriNames).</span>
+    </li>
+  </ol>
+</section>

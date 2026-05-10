@@ -1,0 +1,42 @@
+name: Refresh publication stats from OpenAlex
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:        # also runnable manually from the Actions tab
+
+permissions:
+  contents: write           # so the workflow can commit the regenerated yaml
+
+concurrency:
+  group: update-pubs
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh _data/pubs_stats.yml from OpenAlex
+        env:
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO || 'atnafuatx@gmail.com' }}
+        run: python scripts/update-pubs.py
+
+      - name: Commit changes (if any)
+        run: |
+          if [[ -z "$(git status --porcelain _data/pubs_stats.yml)" ]]; then
+            echo "no changes — skipping commit"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/pubs_stats.yml
+          git commit -m "chore(pubs): refresh stats from OpenAlex"
+          git push

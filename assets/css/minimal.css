@@ -371,6 +371,319 @@ footer.site .foot-meta {
   -webkit-text-fill-color: transparent;
 }
 
+/* ============================================================
+   Blocks — each section on Home is its own visual "block" with
+   a distinct treatment. They all share the .block base and the
+   small uppercase .block-label, but differ in background,
+   border, layout, and animation.
+   ============================================================ */
+.block {
+  position: relative;
+  margin: 2.5rem 0;
+  scroll-margin-top: 5rem;
+}
+.block-label {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.block-label::before {
+  content: "";
+  width: 14px;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+/* ----- Block 1: Bio card — tinted card with left accent rail ----- */
+.block--bio {
+  background: linear-gradient(180deg, var(--bg-tint), #fbf8f2);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 1.75rem 1.75rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+  transition: box-shadow .4s var(--ease), transform .4s var(--ease);
+}
+.block--bio:hover {
+  box-shadow: 0 6px 18px rgba(139,26,26,0.06);
+}
+.block--bio .lede {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 0 0 1.1rem;
+}
+.block--bio .bio-secondary {
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ----- Block 2: Research interests — 2x2 numbered grid ----- */
+.block--interests .interest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+.interest-card {
+  position: relative;
+  padding: 1.1rem 1.1rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  transition: transform .35s var(--ease), border-color .35s var(--ease),
+              box-shadow .35s var(--ease), background-color .35s var(--ease);
+  cursor: default;
+}
+.interest-card::after {
+  /* corner mark — appears on hover */
+  content: "";
+  position: absolute;
+  right: 12px; top: 12px;
+  width: 8px; height: 8px;
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  opacity: 0;
+  transform: translate(-4px, 4px);
+  transition: opacity .3s var(--ease), transform .3s var(--ease);
+}
+.interest-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(139,26,26,0.06);
+  background: #fdfbf8;
+}
+.interest-card:hover::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.interest-num {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+}
+.interest-title {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+}
+.interest-body {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ----- Block 3: Featured paper spotlight ----- */
+.block--spotlight {
+  /* nothing on the outer container itself; the card does the work */
+}
+.spotlight-card {
+  position: relative;
+  padding: 1.5rem 1.6rem 1.4rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.spotlight-card::before {
+  /* decorative quote / asterisk mark */
+  content: "★";
+  position: absolute;
+  right: -10px; top: -22px;
+  font-family: var(--serif);
+  font-size: 7rem;
+  color: var(--accent);
+  opacity: 0.05;
+  line-height: 1;
+  pointer-events: none;
+  transition: transform .6s var(--ease), opacity .6s var(--ease);
+}
+.spotlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(139,26,26,0.08);
+}
+.spotlight-card:hover::before {
+  transform: rotate(12deg) scale(1.08);
+  opacity: 0.09;
+}
+.spotlight-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+.badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.badge--award {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid rgba(139,26,26,0.18);
+}
+.badge--venue {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+}
+.spotlight-title {
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 0.5rem;
+}
+.spotlight-title a {
+  color: var(--ink) !important;
+  background-image: none !important;
+  padding-bottom: 0 !important;
+}
+.spotlight-title a:hover {
+  color: var(--accent) !important;
+}
+.spotlight-authors {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+.spotlight-authors .me { color: var(--ink); font-weight: 500; }
+.spotlight-blurb {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+}
+.spotlight-cta {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.spotlight-cta:hover {
+  border-bottom-color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* ----- Block 4: News timeline (vertical) ----- */
+.block--timeline .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  position: relative;
+}
+.block--timeline .timeline::before {
+  /* connector line */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 1px;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--rule) 100%);
+}
+.t-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.9rem;
+  align-items: baseline;
+  padding: 0.75rem 0 0.75rem 1.1rem;
+  margin-left: -1.2rem;
+  border-bottom: 1px dotted var(--rule);
+  transition: padding-left .3s var(--ease);
+}
+.t-item:hover { padding-left: 1.5rem; }
+.t-item:last-child { border-bottom: 0; }
+.t-dot {
+  position: absolute;
+  left: -5px;
+  top: 1.05rem;
+  width: 10px;
+  height: 10px;
+  background: var(--bg);
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  transition: background-color .3s var(--ease), transform .3s var(--ease);
+}
+.t-item:hover .t-dot {
+  background: var(--accent);
+  transform: scale(1.2);
+}
+.t-date {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  transition: color .25s var(--ease);
+}
+.t-item:hover .t-date { color: var(--accent); }
+.t-body {
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* ============================================================
+   Award badge on publication entries
+   ============================================================ */
+.pub--award {
+  background: linear-gradient(90deg, var(--accent-soft) 0%, transparent 40%);
+  padding-left: 0.7rem !important;
+}
+.pub--award::before { width: 0.5rem !important; }
+.award-badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 1px 7px;
+  border-radius: 3px;
+  margin-left: 0.3rem;
+}
+
+/* ============================================================
+   Chart meta (data source label)
+   ============================================================ */
+.viz-meta {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 /* ----- tag chips ----- */
 .tags { display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
 .tags li {
@@ -633,6 +946,11 @@ footer.site a:hover { color: var(--ink); border-bottom-color: var(--ink); }
   .lede.has-drop::first-letter { font-size: 2.6rem; }
   .spotlight { display: none; }
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .block--interests .interest-grid { grid-template-columns: 1fr; }
+  .block--bio { padding: 1.25rem 1.25rem 1rem; }
+  .spotlight-card { padding: 1.25rem 1.25rem 1.2rem; }
+  .spotlight-card::before { font-size: 5rem; right: -4px; top: -12px; }
+  .t-item { grid-template-columns: 3.5rem 1fr; gap: 0.6rem; }
 }
 
 /* ----- print ----- */

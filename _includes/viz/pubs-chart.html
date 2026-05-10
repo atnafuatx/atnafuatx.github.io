@@ -1,44 +1,76 @@
 {% comment %}
-  Publications-by-year bar chart.
-  Hand-rolled SVG — no JS, no dependencies.
-  Data is hardcoded here; update the `years` list when papers are added.
+  Publications-by-year bar chart — data-driven.
+
+  Reads from _data/pubs-stats.yml (auto-refreshed weekly by the
+  .github/workflows/update-pubs.yml workflow, which queries OpenAlex).
+
+  Falls back to counting _data/publications.yml entries if the stats
+  file is empty.
 {% endcomment %}
 
-{% assign years = "2021,2022,2023,2024,2025,2026" | split: "," %}
-{% assign counts = "2,4,9,7,4,1" | split: "," %}
+{%- assign stats = site.data.pubs_stats.by_year -%}
+{%- if stats == nil or stats.size == 0 -%}
+  {%- comment -%} fallback: derive from publications.yml {%- endcomment -%}
+  {%- assign stats = "" | split: "" -%}
+  {%- assign years_seen = "" | split: "" -%}
+  {%- for p in site.data.publications -%}
+    {%- assign y = p.year -%}
+    {%- unless years_seen contains y -%}
+      {%- assign years_seen = years_seen | push: y -%}
+    {%- endunless -%}
+  {%- endfor -%}
+  {%- assign years_sorted = years_seen | sort -%}
+  {%- for y in years_sorted -%}
+    {%- assign c = 0 -%}
+    {%- for p in site.data.publications -%}
+      {%- if p.year == y -%}{%- assign c = c | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- capture row -%}{ "year": {{ y }}, "count": {{ c }} }{%- endcapture -%}
+    {%- assign stats = stats | push: row -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment -%} compute max for scaling {%- endcomment -%}
+{%- assign maxn = 1 -%}
+{%- for r in stats -%}
+  {%- if r.count > maxn -%}{%- assign maxn = r.count -%}{%- endif -%}
+{%- endfor -%}
+
+{%- assign n = stats.size -%}
+{%- assign chart_w = 600 -%}
+{%- assign pad_l = 40 -%}
+{%- assign pad_r = 40 -%}
+{%- assign inner_w = chart_w | minus: pad_l | minus: pad_r -%}
+{%- assign slot = inner_w | divided_by: n -%}
+{%- assign bar_w = slot | times: 70 | divided_by: 100 -%}
 
 <div class="viz pubs-chart" data-reveal>
-  <div class="viz-title">Publications per year</div>
-  <svg viewBox="0 0 600 200" preserveAspectRatio="xMidYMid meet" aria-label="bar chart of publications per year">
-    <!-- baseline -->
-    <line class="axis" x1="40" y1="160" x2="580" y2="160" />
+  <div class="viz-title">
+    Publications per year
+    {%- if site.data.pubs_stats.source %}<span class="viz-meta"> · {{ site.data.pubs_stats.source }}</span>{% endif -%}
+  </div>
+  <svg viewBox="0 0 {{ chart_w }} 200" preserveAspectRatio="xMidYMid meet"
+       aria-label="bar chart of publications per year">
 
-    {% assign max = 9 %}
-    {% assign bar_w = 60 %}
+    <line class="axis" x1="{{ pad_l }}" y1="160" x2="{{ chart_w | minus: pad_r | plus: 20 }}" y2="160" />
 
-    {% for y in years %}
+    {% for r in stats %}
       {% assign i = forloop.index0 %}
-      {% assign c = counts[i] | plus: 0 %}
-      {% assign h = c | times: 130 | divided_by: max %}
-      {% assign x_pos = i | times: 90 | plus: 60 %}
+      {% assign h = r.count | times: 130 | divided_by: maxn %}
+      {% assign slot_start = i | times: slot | plus: pad_l %}
+      {% assign x_pos = slot_start | plus: 10 %}
+      {% assign cx = slot_start | plus: slot | divided_by: 2 | plus: 5 %}
       {% assign y_pos = 160 | minus: h %}
 
-      <!-- bar -->
       <rect class="bar"
             x="{{ x_pos }}" y="{{ y_pos }}"
             width="{{ bar_w }}" height="{{ h }}"
             rx="1.5">
-        <title>{{ y }}: {{ c }} paper{% if c != "1" %}s{% endif %}</title>
+        <title>{{ r.year }}: {{ r.count }} paper{% if r.count != 1 %}s{% endif %}</title>
       </rect>
 
-      <!-- count label above bar -->
-      {% assign label_x = x_pos | plus: 30 %}
-      {% assign label_y = y_pos | minus: 8 %}
-      <text class="label-y" x="{{ label_x }}" y="{{ label_y }}" text-anchor="middle">{{ c }}</text>
-
-      <!-- year label below baseline -->
-      {% assign year_y = 180 %}
-      <text class="label-x" x="{{ label_x }}" y="{{ year_y }}" text-anchor="middle">{{ y }}</text>
+      <text class="label-y" x="{{ cx }}" y="{{ y_pos | minus: 8 }}" text-anchor="middle">{{ r.count }}</text>
+      <text class="label-x" x="{{ cx }}" y="180" text-anchor="middle">{{ r.year }}</text>
     {% endfor %}
   </svg>
 </div>
