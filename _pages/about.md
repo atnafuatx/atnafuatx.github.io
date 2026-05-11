@@ -148,7 +148,7 @@ redirect_from:
     <li class="t-item" data-reveal style="--rd:240ms;">
       <span class="t-dot" aria-hidden="true"></span>
       <span class="t-date">2024</span>
-      <span class="t-body">2 papers at <strong>EMNLP 2024</strong>: <a href="https://aclanthology.org/2024.emnlp-main.983.pdf">Zeno's Paradox of "Low-Resource" Languages</a> <strong style="color: var(--accent);">★ Outstanding Paper</strong> & <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
+      <span class="t-body">2 papers at <strong>EMNLP 2024</strong>: <a href="https://aclanthology.org/2024.emnlp-main.983.pdf">Zeno's Paradox of "Low-Resource" Languages</a> <strong style="color: var(--block-c);">★ Outstanding Paper</strong> & <a href="https://arxiv.org/abs/2402.08015">Walia-LLM (Amharic)</a>.</span>
     </li>
     <li class="t-item" data-reveal style="--rd:300ms;">
       <span class="t-dot" aria-hidden="true"></span>

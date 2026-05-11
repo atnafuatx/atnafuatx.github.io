@@ -18,6 +18,21 @@
   --accent-2: #c2410c;          /* warmer secondary, used in viz */
   --accent-3: #1f4d4f;          /* deep teal, used in viz */
   --accent-soft: rgba(139,26,26,0.08);
+
+  /* Per-block tonal palette (used by .block--* on the home page) */
+  --c-bio:        #8b1a1a;       /* crimson */
+  --c-bio-soft:   rgba(139,26,26,0.08);
+  --c-bio-tint:   rgba(139,26,26,0.04);
+  --c-int:        #1f6e44;       /* deep forest */
+  --c-int-soft:   rgba(31,110,68,0.08);
+  --c-int-tint:   rgba(31,110,68,0.04);
+  --c-spot:       #b45309;       /* deep amber */
+  --c-spot-soft:  rgba(180,83,9,0.10);
+  --c-spot-tint:  rgba(180,83,9,0.05);
+  --c-news:       #1e4d6e;       /* deep blue */
+  --c-news-soft:  rgba(30,77,110,0.10);
+  --c-news-tint:  rgba(30,77,110,0.04);
+
   --serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --measure: 38rem;
@@ -373,22 +388,31 @@ footer.site .foot-meta {
 
 /* ============================================================
    Blocks — each section on Home is its own visual "block" with
-   a distinct treatment. They all share the .block base and the
-   small uppercase .block-label, but differ in background,
-   border, layout, and animation.
+   a distinct treatment. They share .block base + .block-label
+   uppercase tag, but differ in colour, background, and layout.
+   Each block exposes --block-c (its accent) so child rules use
+   the right colour without copy-pasting selectors.
    ============================================================ */
 .block {
   position: relative;
   margin: 2.5rem 0;
   scroll-margin-top: 5rem;
+  --block-c:       var(--accent);
+  --block-c-soft:  var(--accent-soft);
+  --block-c-tint:  rgba(139,26,26,0.04);
 }
+.block--bio       { --block-c: var(--c-bio);  --block-c-soft: var(--c-bio-soft);  --block-c-tint: var(--c-bio-tint); }
+.block--interests { --block-c: var(--c-int);  --block-c-soft: var(--c-int-soft);  --block-c-tint: var(--c-int-tint); }
+.block--spotlight { --block-c: var(--c-spot); --block-c-soft: var(--c-spot-soft); --block-c-tint: var(--c-spot-tint); }
+.block--timeline  { --block-c: var(--c-news); --block-c-soft: var(--c-news-soft); --block-c-tint: var(--c-news-tint); }
+
 .block-label {
   font-family: var(--sans);
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--muted);
+  color: var(--block-c);
   margin: 0 0 1rem;
   display: inline-flex;
   align-items: center;
@@ -398,22 +422,22 @@ footer.site .foot-meta {
   content: "";
   width: 14px;
   height: 1px;
-  background: var(--accent);
+  background: var(--block-c);
   display: inline-block;
 }
 
-/* ----- Block 1: Bio card — tinted card with left accent rail ----- */
+/* ----- Block 1: Bio card — crimson rail + warm tint ----- */
 .block--bio {
-  background: linear-gradient(180deg, var(--bg-tint), #fbf8f2);
+  background: linear-gradient(180deg, var(--block-c-tint), transparent 80%), var(--bg-tint);
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--block-c);
   border-radius: 6px;
   padding: 1.75rem 1.75rem 1.25rem;
   box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-  transition: box-shadow .4s var(--ease), transform .4s var(--ease);
+  transition: box-shadow .4s var(--ease);
 }
 .block--bio:hover {
-  box-shadow: 0 6px 18px rgba(139,26,26,0.06);
+  box-shadow: 0 8px 22px var(--block-c-soft);
 }
 .block--bio .lede {
   font-size: 1.08rem;
@@ -427,7 +451,7 @@ footer.site .foot-meta {
   margin: 0;
 }
 
-/* ----- Block 2: Research interests — 2x2 numbered grid ----- */
+/* ----- Block 2: Research interests — green-themed 2x2 grid ----- */
 .block--interests .interest-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -438,28 +462,29 @@ footer.site .foot-meta {
   padding: 1.1rem 1.1rem 1rem;
   background: var(--bg);
   border: 1px solid var(--rule);
+  border-top: 2px solid transparent;
   border-radius: 4px;
   transition: transform .35s var(--ease), border-color .35s var(--ease),
               box-shadow .35s var(--ease), background-color .35s var(--ease);
   cursor: default;
 }
 .interest-card::after {
-  /* corner mark — appears on hover */
   content: "";
   position: absolute;
   right: 12px; top: 12px;
   width: 8px; height: 8px;
-  border-top: 1px solid var(--accent);
-  border-right: 1px solid var(--accent);
+  border-top: 1px solid var(--block-c);
+  border-right: 1px solid var(--block-c);
   opacity: 0;
   transform: translate(-4px, 4px);
   transition: opacity .3s var(--ease), transform .3s var(--ease);
 }
 .interest-card:hover {
   transform: translateY(-3px);
-  border-color: var(--accent);
-  box-shadow: 0 10px 24px rgba(139,26,26,0.06);
-  background: #fdfbf8;
+  border-color: var(--rule);
+  border-top-color: var(--block-c);
+  box-shadow: 0 10px 24px var(--block-c-soft);
+  background: linear-gradient(180deg, var(--block-c-tint), transparent 60%);
 }
 .interest-card:hover::after {
   opacity: 1;
@@ -470,7 +495,7 @@ footer.site .foot-meta {
   font-family: var(--sans);
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--block-c);
   letter-spacing: 0.1em;
   margin-bottom: 0.4rem;
 }
@@ -489,42 +514,39 @@ footer.site .foot-meta {
   margin: 0;
 }
 
-/* ----- Block 3: Featured paper spotlight ----- */
-.block--spotlight {
-  /* nothing on the outer container itself; the card does the work */
-}
+/* ----- Block 3: Featured spotlight — amber-themed ----- */
 .spotlight-card + .spotlight-card {
   margin-top: 1rem;
 }
 .spotlight-card {
   position: relative;
   padding: 1.5rem 1.6rem 1.4rem;
-  background: var(--bg);
+  background: linear-gradient(135deg, var(--block-c-tint), transparent 60%), var(--bg);
   border: 1px solid var(--rule);
   border-radius: 6px;
   overflow: hidden;
-  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
 }
 .spotlight-card::before {
-  /* decorative quote / asterisk mark */
   content: "★";
   position: absolute;
   right: -10px; top: -22px;
   font-family: var(--serif);
   font-size: 7rem;
-  color: var(--accent);
-  opacity: 0.05;
+  color: var(--block-c);
+  opacity: 0.06;
   line-height: 1;
   pointer-events: none;
   transition: transform .6s var(--ease), opacity .6s var(--ease);
 }
 .spotlight-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(139,26,26,0.08);
+  border-color: var(--block-c);
+  box-shadow: 0 14px 28px var(--block-c-soft);
 }
 .spotlight-card:hover::before {
   transform: rotate(12deg) scale(1.08);
-  opacity: 0.09;
+  opacity: 0.11;
 }
 .spotlight-meta {
   display: flex;
@@ -543,9 +565,9 @@ footer.site .foot-meta {
   border-radius: 999px;
 }
 .badge--award {
-  background: var(--accent-soft);
-  color: var(--accent);
-  border: 1px solid rgba(139,26,26,0.18);
+  background: var(--block-c-soft);
+  color: var(--block-c);
+  border: 1px solid var(--block-c-soft);
 }
 .badge--venue {
   background: transparent;
@@ -565,7 +587,7 @@ footer.site .foot-meta {
   padding-bottom: 0 !important;
 }
 .spotlight-title a:hover {
-  color: var(--accent) !important;
+  color: var(--block-c) !important;
 }
 .spotlight-authors {
   font-family: var(--sans);
@@ -585,18 +607,18 @@ footer.site .foot-meta {
   font-family: var(--sans);
   font-size: 0.82rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--block-c);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
   transition: border-color .25s var(--ease), transform .25s var(--ease);
 }
 .spotlight-cta:hover {
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--block-c);
   transform: translateX(3px);
 }
 
-/* ----- Block 4: News timeline (vertical) ----- */
+/* ----- Block 4: News timeline — blue-themed ----- */
 .block--timeline .timeline {
   list-style: none;
   margin: 0;
@@ -604,14 +626,13 @@ footer.site .foot-meta {
   position: relative;
 }
 .block--timeline .timeline::before {
-  /* connector line */
   content: "";
   position: absolute;
   left: 0;
   top: 0.4rem;
   bottom: 0.4rem;
   width: 1px;
-  background: linear-gradient(180deg, var(--accent) 0%, var(--rule) 100%);
+  background: linear-gradient(180deg, var(--block-c) 0%, var(--rule) 100%);
 }
 .t-item {
   position: relative;
@@ -622,9 +643,12 @@ footer.site .foot-meta {
   padding: 0.75rem 0 0.75rem 1.1rem;
   margin-left: -1.2rem;
   border-bottom: 1px dotted var(--rule);
-  transition: padding-left .3s var(--ease);
+  transition: padding-left .3s var(--ease), background-color .3s var(--ease);
 }
-.t-item:hover { padding-left: 1.5rem; }
+.t-item:hover {
+  padding-left: 1.5rem;
+  background-color: var(--block-c-tint);
+}
 .t-item:last-child { border-bottom: 0; }
 .t-dot {
   position: absolute;
@@ -633,12 +657,12 @@ footer.site .foot-meta {
   width: 10px;
   height: 10px;
   background: var(--bg);
-  border: 1.5px solid var(--accent);
+  border: 1.5px solid var(--block-c);
   border-radius: 50%;
   transition: background-color .3s var(--ease), transform .3s var(--ease);
 }
 .t-item:hover .t-dot {
-  background: var(--accent);
+  background: var(--block-c);
   transform: scale(1.2);
 }
 .t-date {
@@ -648,7 +672,7 @@ footer.site .foot-meta {
   letter-spacing: 0.02em;
   transition: color .25s var(--ease);
 }
-.t-item:hover .t-date { color: var(--accent); }
+.t-item:hover .t-date { color: var(--block-c); }
 .t-body {
   font-size: 0.98rem;
   line-height: 1.55;
