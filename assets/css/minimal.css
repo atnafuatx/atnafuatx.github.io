@@ -1,5 +1,10 @@
 ---
-# Front matter ensures Jekyll copies this file from /assets/css/ to the built site.
+# Front matter ensures Jekyll processes this file (no Liquid is used here,
+# but it copies the file from /assets/css/ to the built site).
+# layout: null prevents Jekyll from wrapping the CSS in an HTML layout —
+# without this, the served file would be HTML with the CSS embedded inside,
+# which silently breaks many style rules.
+layout: null
 ---
 /* ============================================================
    Minimal — typographic / academic theme for atnafuatx.github.io

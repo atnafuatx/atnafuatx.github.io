@@ -125,7 +125,12 @@ redirect_from:
 <section class="block block--timeline" data-reveal>
   <div class="block-label">News</div>
   <ol class="timeline">
-    <li class="t-item" data-reveal>
+ <li class="t-item" data-reveal>
+      <span class="t-dot" aria-hidden="true"></span>
+      <span class="t-date">2026</span>
+      <span class="t-body">2 papers accepted at <strong>ACL 2026</strong>: <a href="https://arxiv.org/pdf/2601.05699">AfriMCQA-Multimodal Cultural Question Answering for African Languages</a> and <a href="https://arxiv.org/pdf/2601.18026">CommonLID: Re-evaluating State-of-the-Art Language Identification Performance on Web Data</a>.</span>
+    </li>
+    <li class="t-item" data-reveal data-reveal style="--rd:60ms;">
       <span class="t-dot" aria-hidden="true"></span>
       <span class="t-date">2026</span>
       <span class="t-body">Joined <a href="https://www.ucl.ac.uk/">UCL</a> as a Google DeepMind Academic Fellow.</span>
@@ -138,7 +143,7 @@ redirect_from:
     <li class="t-item" data-reveal style="--rd:120ms;">
       <span class="t-dot" aria-hidden="true"></span>
       <span class="t-date">2025</span>
-      <span class="t-body">1 paper at <strong>NAACL 2025</strong>: <a href="https://arxiv.org/pdf/2411.05049">ProverbEval — LLM evaluation for low-resource languages</a>.</span>
+      <span class="t-body">1 paper accepted at <strong>NAACL 2025</strong>: <a href="https://arxiv.org/pdf/2411.05049">ProverbEval — LLM evaluation for low-resource languages</a>.</span>
     </li>
     <li class="t-item" data-reveal style="--rd:180ms;">
       <span class="t-dot" aria-hidden="true"></span>

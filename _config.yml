@@ -183,6 +183,11 @@ collections:
 
 # Defaults
 defaults:
+  # /assets — never wrap CSS/JS/image files in any layout
+  - scope:
+      path: "assets"
+    values:
+      layout: null
   # _posts
   - scope:
       path: ""
