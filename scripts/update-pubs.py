@@ -29,7 +29,7 @@ AUTHOR_NAME = "Atnafu Lambebo Tonja"
 AUTHOR_OPENALEX_ID: str | None = None
 # Polite-pool — OpenAlex asks you to include a contact email in the User-Agent
 # or `mailto` parameter. This gets you faster, more reliable responses.
-MAILTO = os.environ.get("OPENALEX_MAILTO", "atnafuatx@gmail.com")
+MAILTO = os.environ.get("OPENALEX_MAILTO", "atnafuatx[at]gmail[dot]com")
 
 # Where to write the data
 OUT = os.path.join(
