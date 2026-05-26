@@ -33,7 +33,7 @@ redirect_from:
 
 <section class="block block--bio" data-reveal>
   <div class="block-label">About</div>
-  <p class="lede has-drop">
+  <p class="lede">
     I'm a Google DeepMind Academic Fellow at <a href="https://www.ucl.ac.uk/">University College London</a>.
     Previously I was a postdoctoral researcher at <a href="https://mbzuai.ac.ae/">MBZUAI</a> in the UAE,
     working with <a href="https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en">Prof. Thamar Solorio</a>.
