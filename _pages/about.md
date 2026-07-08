@@ -95,6 +95,17 @@ redirect_from:
       <span class="badge badge--venue">EMNLP 2024</span>
     </div>
     <h3 class="spotlight-title">
+      <a href="https://aclanthology.org/2026.acl-long.1869.pdf">Afri-MCQA: Multimodal Cultural Question Answering for African Languages</a>
+    </h3>
+    <p class="spotlight-authors"> <span class="me">Atnafu Lambebo Tonja </span>, Srija Anand, Emilio Villa-Cueva, Israel Abebe Azime, Jesujoba Alabi, Muhidin A Mohamed, Debela Desalegn Yadeta, Negasi Haile Abadi, Abigail Oppong, Nnaemeka Casmir Obiefuna, Idris Abdulmumin, Naome A Etori, Eric Peter Wairagala, Kanda Patrick Tshinu, Imanigirimbabazi Emmanuel, Gabofetswe Malema, Alham Fikri Aji, David Ifeoluwa Adelani, Thamar Solorio</p>
+    <p class="spotlight-blurb">A benchmark for Mutimodal cutural question answering across 16 African languages, with strong baselines and a public dataset.</p>
+  </article>
+<article class="spotlight-card" data-reveal>
+    <div class="spotlight-meta">
+      <span class="badge badge--award">★ Outstanding Paper</span>
+      <span class="badge badge--venue">EMNLP 2024</span>
+    </div>
+    <h3 class="spotlight-title">
       <a href="https://aclanthology.org/2024.emnlp-main.983.pdf">The Zeno's Paradox of "Low-Resource" Languages</a>
     </h3>
     <p class="spotlight-authors">Hellina H. Nigatu, <span class="me">Atnafu Lambebo Tonja</span>, Benjamin Rosman, Thamar Solorio, Monojit Choudhury</p>
