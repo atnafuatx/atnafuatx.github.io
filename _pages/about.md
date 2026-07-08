@@ -91,7 +91,7 @@ redirect_from:
 
 <article class="spotlight-card" data-reveal>
     <div class="spotlight-meta">
-      <span class="badge badge--award">★ Outstanding Paper</span>
+      <span class="badge badge--award">★ Social impact Papaer Award</span>
       <span class="badge badge--venue">ACL 2026</span>
     </div>
     <h3 class="spotlight-title">
