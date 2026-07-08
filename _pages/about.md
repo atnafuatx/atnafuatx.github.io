@@ -92,7 +92,7 @@ redirect_from:
 <article class="spotlight-card" data-reveal>
     <div class="spotlight-meta">
       <span class="badge badge--award">★ Outstanding Paper</span>
-      <span class="badge badge--venue">EMNLP 2024</span>
+      <span class="badge badge--venue">ACL 2026</span>
     </div>
     <h3 class="spotlight-title">
       <a href="https://aclanthology.org/2026.acl-long.1869.pdf">Afri-MCQA: Multimodal Cultural Question Answering for African Languages</a>
