@@ -1,0 +1,66 @@
+---
+permalink: /
+title: "Atnafu Lambebo Tonja"
+description: "Google DeepMind Academic Fellow at University College London, working on NLP for under-resourced languages."
+hide_title: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+<section class="intro">
+  <img class="portrait" src="{{ site.author.avatar | relative_url }}" alt="Portrait of {{ site.author.name }}" width="120" height="120">
+  <div>
+    <h1>{{ site.author.name }}</h1>
+    <p class="role">
+      {{ site.author.role }}<br>
+      <a href="{{ site.author.affiliation_url }}">{{ site.author.affiliation }}</a> · {{ site.author.location }}
+    </p>
+    {% include links.html %}
+  </div>
+</section>
+
+<section class="bio">
+  <p>
+    I work on natural language processing for the world's under-resourced languages:
+    corpora, multilingual language models and culturally grounded evaluation benchmarks
+    for African and Indigenous languages, and speech and multimodal systems for
+    communities that mainstream NLP usually leaves out.
+  </p>
+  <p>
+    Before joining UCL, I was a postdoctoral researcher at <a href="https://mbzuai.ac.ae/">MBZUAI</a>
+    in the UAE, working with <a href="https://scholar.google.com/citations?user=Gmjwy-IAAAAJ&hl=en">Prof. Thamar Solorio</a>.
+    I hold a PhD in Computer Science from <a href="https://www.ipn.mx/">Instituto Politécnico Nacional</a>, Mexico,
+    where I was advised by Prof. Alexander Gelbukh and Prof. Olga Kolesnikova.
+  </p>
+</section>
+
+<section aria-labelledby="news">
+  <h2 id="news">News</h2>
+  {%- assign news = site.data.news %}
+  <ul class="dated compact">
+    {%- for n in news limit: 6 %}
+    <li><span class="when">{{ n.date }}</span><span class="what">{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+    {%- endfor %}
+  </ul>
+  {%- if news.size > 6 %}
+  <details class="more">
+    <summary>Earlier news</summary>
+    <ul class="dated compact">
+      {%- for n in news offset: 6 %}
+      <li><span class="when">{{ n.date }}</span><span class="what">{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+      {%- endfor %}
+    </ul>
+  </details>
+  {%- endif %}
+</section>
+
+<section aria-labelledby="selected">
+  <h2 id="selected">Selected publications</h2>
+  {%- assign selected = site.data.publications | where: "selected", true %}
+  <ul class="pubs">
+    {%- for p in selected %}
+    {% include pub.html p=p %}
+    {%- endfor %}
+  </ul>
+  <p class="more-link"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+</section>

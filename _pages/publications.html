@@ -1,0 +1,23 @@
+---
+title: "Publications"
+description: "Publications by Atnafu Lambebo Tonja on NLP for under-resourced languages."
+permalink: /publications/
+---
+{%- assign pubs = site.data.publications %}
+<p class="lead-meta">
+  {{ pubs.size }} papers, newest first. Also on
+  <a href="https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en">Google Scholar</a> and the
+  <a href="https://aclanthology.org/people/atnafu-lambebo-tonja/">ACL Anthology</a>.
+</p>
+
+{%- assign by_year = pubs | group_by: "year" %}
+{%- for group in by_year %}
+<section aria-labelledby="y{{ group.name }}">
+  <h2 class="year" id="y{{ group.name }}">{{ group.name }}</h2>
+  <ul class="pubs">
+    {%- for p in group.items %}
+    {% include pub.html p=p %}
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
