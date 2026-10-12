@@ -2,13 +2,13 @@
 # every other page, in this order.
 
 - title: Email
-  url: "mailto:atnafuatx@gmail.com"
+  url: "mailto:[firstname]atx[at]gmail[dot]com"
 - title: Google Scholar
   url: "https://scholar.google.com/citations?user=rubyApkAAAAJ&hl=en"
 - title: ACL Anthology
   url: "https://aclanthology.org/people/atnafu-lambebo-tonja/"
-- title: ORCID
-  url: "https://orcid.org/0000-0002-3501-5136"
+# - title: ORCID
+#   url: "https://orcid.org/0000-0002-3501-5136"
 - title: GitHub
   url: "https://github.com/atnafuatx"
 - title: Hugging Face
@@ -17,5 +17,5 @@
   url: "https://x.com/AtnafuLambebo"
 - title: LinkedIn
   url: "https://www.linkedin.com/in/atnafu-lambebo-t-6b21a5184/"
-- title: ResearchGate
-  url: "https://www.researchgate.net/profile/Atnafu-Lambebo-Tonja"
+# - title: ResearchGate
+#   url: "https://www.researchgate.net/profile/Atnafu-Lambebo-Tonja"
