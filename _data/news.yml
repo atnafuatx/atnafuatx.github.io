@@ -1,0 +1,46 @@
+# News, newest first. `text` is Markdown.
+# The home page shows the first six items; the rest fold under "Earlier news".
+
+- date: "2026"
+  text: >-
+    Two papers at **ACL 2026**: [Afri-MCQA](/Afri-MCQA/), which received a
+    **Social Impact Paper Award**, and
+    [CommonLID](https://aclanthology.org/2026.acl-long.1527/).
+
+- date: "2026"
+  text: >-
+    Joined [University College London](https://www.ucl.ac.uk/) as a
+    Google DeepMind Academic Fellow.
+
+- date: "2025"
+  text: >-
+    Joined [MBZUAI](https://mbzuai.ac.ae/) as a postdoctoral researcher with
+    Prof. Thamar Solorio.
+
+- date: "2025"
+  text: >-
+    **NAACL 2025**: [ProverbEval](https://aclanthology.org/2025.findings-naacl.350.pdf),
+    on LLM evaluation for low-resource languages.
+
+- date: "2024"
+  text: >-
+    **NeurIPS 2024 Datasets & Benchmarks**:
+    [CVQA](https://arxiv.org/abs/2406.05967), a culturally diverse
+    multilingual VQA benchmark.
+
+- date: "2024"
+  text: >-
+    Two papers at **EMNLP 2024**:
+    [The Zeno's Paradox of "Low-Resource" Languages](https://aclanthology.org/2024.emnlp-main.983.pdf),
+    which received an **Outstanding Paper Award**, and
+    [Walia-LLM](https://aclanthology.org/2024.findings-emnlp.25.pdf).
+
+- date: "2024"
+  text: >-
+    **LREC-COLING 2024**: [EthioLLM](https://aclanthology.org/2024.lrec-main.561/).
+
+- date: "2023"
+  text: >-
+    Two papers at **EMNLP 2023**, one in **TACL** (AfriSpeech-200) and one at
+    **INTERSPEECH** (AfriNames); **Best Paper Award** at **IJCNLP-AACL 2023**
+    for [MasakhaNEWS](https://arxiv.org/abs/2304.09972).
