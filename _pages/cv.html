@@ -1,0 +1,44 @@
+---
+title: "Curriculum Vitae"
+description: "Curriculum vitae of Atnafu Lambebo Tonja: positions, education and awards."
+permalink: /cv/
+redirect_from:
+  - /resume
+---
+<p class="lead-meta">
+  {%- if site.cv_pdf %}
+  A condensed CV. <a href="{{ site.cv_pdf | relative_url }}">Download the full CV (PDF)</a>.
+  {%- else %}
+  A condensed CV. For the full version, <a href="mailto:atnafuatx@gmail.com">email me</a>.
+  {%- endif %}
+</p>
+
+<h2>Positions</h2>
+<ul class="dated">
+  <li><span class="when">2026–present</span><span class="what">Google DeepMind Academic Fellow<em>University College London, UK</em></span></li>
+  <li><span class="when">2025–2026</span><span class="what">Postdoctoral Researcher<em>MBZUAI, UAE, with Prof. Thamar Solorio</em></span></li>
+  <li><span class="when">2024–2025</span><span class="what">Visiting Student<em>MBZUAI, UAE</em></span></li>
+  <li><span class="when">2023</span><span class="what">Research Scholar<em>University of Colorado Colorado Springs, USA</em></span></li>
+</ul>
+
+<h2>Education</h2>
+<ul class="dated">
+  <li><span class="when">2022–2024</span><span class="what">PhD, Computer Science<em>Instituto Politécnico Nacional, Mexico City. Advisors: Prof. Alexander Gelbukh and Prof. Olga Kolesnikova</em></span></li>
+  <li><span class="when">2019–2021</span><span class="what">MSc, Information Technology<em>Wolaita Sodo University, Ethiopia</em></span></li>
+  <li><span class="when">2011–2015</span><span class="what">BSc, Computer Science<em>Madawalabu University, Ethiopia</em></span></li>
+</ul>
+
+<h2>Awards and honours</h2>
+<ul class="dated">
+  <li><span class="when">2026</span><span class="what">Google DeepMind Academic Fellowship<em>University College London</em></span></li>
+  {%- assign awarded = site.data.publications | where_exp: "p", "p.award" %}
+  {%- for p in awarded %}
+  <li><span class="when">{{ p.year }}</span><span class="what">{{ p.award }}, {{ p.venue }}<em>{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</em></span></li>
+  {%- endfor %}
+</ul>
+
+<h2>Publications</h2>
+<p>{{ site.data.publications.size }} papers, listed on the <a href="{{ '/publications/' | relative_url }}">publications page</a>.</p>
+
+<h2>Languages</h2>
+<p>English · Amharic · Wolaita</p>
