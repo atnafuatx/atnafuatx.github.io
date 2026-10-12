@@ -1,0 +1,32 @@
+---
+title: "Talks"
+description: "Talks by Atnafu Lambebo Tonja."
+permalink: /talks/
+---
+{%- assign talks = site.data.talks %}
+{%- if talks and talks.size > 0 %}
+{%- assign by_year = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
+{%- for group in by_year %}
+<section aria-labelledby="y{{ group.name }}">
+  <h2 class="year" id="y{{ group.name }}">{{ group.name }}</h2>
+  <ul class="entries">
+    {%- for t in group.items %}
+    <li class="entry">
+      <div class="entry-title">{% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</div>
+      <div class="entry-meta">
+        {{- t.date | date: "%b %Y" }}{% if t.type %} · {{ t.type }}{% endif %}{% if t.event %} · {{ t.event }}{% endif %}{% if t.location %} · {{ t.location }}{% endif -%}
+      </div>
+      {%- if t.slides or t.video %}
+      <div class="entry-links">
+        {%- if t.slides %}<a href="{{ t.slides | relative_url }}">Slides</a>{% endif -%}
+        {%- if t.video %}<a href="{{ t.video }}">Video</a>{% endif -%}
+      </div>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+{%- else %}
+<p class="lead-meta">No talks listed yet.</p>
+{%- endif %}

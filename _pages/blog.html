@@ -1,0 +1,30 @@
+---
+title: "Blog"
+description: "Writing by Atnafu Lambebo Tonja."
+permalink: /blog/
+redirect_from:
+  - /year-archive/
+  - /posts/
+---
+{%- if site.posts.size > 0 %}
+{%- assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{%- for group in by_year %}
+<section aria-labelledby="y{{ group.name }}">
+  <h2 class="year" id="y{{ group.name }}">{{ group.name }}</h2>
+  <ul class="entries">
+    {%- for p in group.items %}
+    <li class="entry">
+      <div class="entry-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></div>
+      <div class="entry-meta"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d %B %Y" }}</time></div>
+      {%- assign summary = p.description | default: p.excerpt | strip_html | strip_newlines | truncate: 220 %}
+      {%- if summary != "" %}
+      <p class="entry-summary">{{ summary }}</p>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+{%- else %}
+<p class="lead-meta">No posts yet.</p>
+{%- endif %}

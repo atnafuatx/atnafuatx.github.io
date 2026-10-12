@@ -22,7 +22,11 @@ author:
 cv_pdf      :
 
 # Profile links live in _data/links.yml, navigation in _data/navigation.yml,
-# publications in _data/publications.yml and news in _data/news.yml.
+# publications in _data/publications.yml, news in _data/news.yml and talks in
+# _data/talks.yml. Blog posts go in _posts/ (see README.md).
+
+# Blog post URLs, e.g. /blog/2026/my-post/
+permalink: /blog/:year/:title/
 
 include:
   - _pages
@@ -48,7 +52,13 @@ defaults:
       type: pages
     values:
       layout: minimal
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
