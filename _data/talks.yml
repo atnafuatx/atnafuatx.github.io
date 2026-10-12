@@ -1,0 +1,21 @@
+# Talks, newest first. Shown on /talks/, grouped by year.
+#
+# Fields
+#   date      required, e.g. 2026-05-14
+#   title     required
+#   event     conference, workshop or host
+#   location  e.g. "London, UK" or "Online"
+#   type      optional label, e.g. "Invited talk", "Keynote", "Tutorial", "Panel"
+#   url       optional link for the title (event or talk page)
+#   slides    optional; a URL, or a file in /files/, e.g. "/files/talks/my-talk.pdf"
+#   video     optional URL
+#
+# Copy this block, remove the leading "# " and fill it in:
+#
+# - date: 2026-05-14
+#   title: "Talk title"
+#   event: "Conference or host"
+#   location: "City, Country"
+#   type: "Invited talk"
+#   slides: "/files/talks/talk.pdf"
+#   video: "https://..."

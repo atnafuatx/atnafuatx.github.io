@@ -95,7 +95,7 @@ h2 { font-size: 1.3rem; margin: 3rem 0 1rem; }
 h3 { font-size: 1.05rem; margin: 2rem 0 0.5rem; }
 
 /* small sans-serif supporting text */
-.lead-meta, .role, .links, .dated .when, .pub-authors, .pub-venue,
+.lead-meta, .role, .links, .dated .when, .pub-authors, .pub-venue, .entry-meta, .entry-links,
 .pub-links, .more-link, details.more summary, footer.site {
   font-family: var(--sans);
 }
@@ -205,13 +205,13 @@ details.more summary {
 details.more summary:hover { color: var(--ink); }
 details.more[open] summary { margin-bottom: 0.5rem; }
 
-/* ----- publications ----- */
-.pubs { list-style: none; margin: 0; padding: 0; }
-.pub { margin: 0 0 1.4rem; }
-.pub:last-child { margin-bottom: 0; }
-.pub-title { font-weight: 600; line-height: 1.4; }
-.pub-title a { text-decoration: none; }
-.pub-title a:hover { text-decoration: underline; }
+/* ----- publications, talks, blog lists ----- */
+.pubs, .entries { list-style: none; margin: 0; padding: 0; }
+.pub, .entry { margin: 0 0 1.4rem; }
+.pub:last-child, .entry:last-child { margin-bottom: 0; }
+.pub-title, .entry-title { font-weight: 600; line-height: 1.4; }
+.pub-title a, .entry-title a { text-decoration: none; }
+.pub-title a:hover, .entry-title a:hover { text-decoration: underline; }
 .pub-authors {
   color: var(--muted);
   font-size: 0.875rem;
@@ -219,22 +219,60 @@ details.more[open] summary { margin-bottom: 0.5rem; }
   margin-top: 0.2rem;
 }
 .pub-authors .me { color: var(--ink); font-weight: 500; }
-.pub-venue { color: var(--ink-soft); font-size: 0.875rem; margin-top: 0.1rem; }
+.pub-venue, .entry-meta { color: var(--ink-soft); font-size: 0.875rem; margin-top: 0.1rem; }
+.entry-summary { color: var(--ink-soft); font-size: 0.95rem; margin: 0.3rem 0 0; }
 .award { color: var(--accent); }
-.pub-links {
+.pub-links, .entry-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.2rem 1rem;
   font-size: 0.85rem;
   margin-top: 0.15rem;
 }
-.pub-links a { color: var(--muted); }
-.pub-links a:hover { color: var(--accent); }
+.pub-links a, .entry-links a { color: var(--muted); }
+.pub-links a:hover, .entry-links a:hover { color: var(--accent); }
 
 h2.year { font-size: 1.1rem; margin-top: 2.5rem; }
 .lead-meta + section h2.year { margin-top: 0; }
 
 .more-link { font-size: 0.92rem; margin-top: 1.5rem; }
+
+/* ----- blog posts ----- */
+.post-meta {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: -0.4rem 0 2rem;
+}
+.prose h2 { margin: 2.5rem 0 0.75rem; }
+.prose ul, .prose ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+.prose li { margin-bottom: 0.3rem; }
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: var(--code-bg);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+.prose pre code { background: none; padding: 0; font-size: inherit; }
+.prose img { display: block; margin: 1.5rem auto; border-radius: 4px; }
+.prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+.prose table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+.prose th, .prose td { border-bottom: 1px solid var(--rule); padding: 0.4rem 0.75rem; text-align: left; }
 
 /* ----- project pages ----- */
 .byline { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
