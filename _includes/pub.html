@@ -1,0 +1,18 @@
+{%- comment -%}
+  One publication entry. Pass the entry as `p`:
+    {% include pub.html p=entry %}
+{%- endcomment -%}
+{%- assign p = include.p -%}
+<li class="pub">
+  <div class="pub-title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</div>
+  <div class="pub-authors">{{ p.authors }}</div>
+  <div class="pub-venue">{{ p.venue }}{% if p.award %} · <span class="award">★ {{ p.award }}</span>{% endif %}</div>
+  {%- if p.project or p.data or p.code or p.bib %}
+  <div class="pub-links">
+    {%- if p.project %}<a href="{{ p.project | relative_url }}">Project</a>{% endif -%}
+    {%- if p.data %}<a href="{{ p.data }}">Data</a>{% endif -%}
+    {%- if p.code %}<a href="{{ p.code }}">Code</a>{% endif -%}
+    {%- if p.bib %}<a href="{{ p.bib }}">BibTeX</a>{% endif -%}
+  </div>
+  {%- endif %}
+</li>

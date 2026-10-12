@@ -1,14 +1,6 @@
-# main links (used by minimal layout; values mirrored in _layouts/minimal.html)
+# Header navigation (the name on the left always links home).
 main:
-  - title: "About"
-    url: /
   - title: "Publications"
     url: /publications/
   - title: "CV"
     url: /cv/
-  - title: "Talks"
-    url: /talks/
-  - title: "Blog"
-    url: /year-archive/
-  - title: "Projects"
-    url: /projects/
